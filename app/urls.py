@@ -3,7 +3,9 @@ from . import views
 
 app_name = 'app'
 urlpatterns = [
+    # Pages
     path('', views.home, name='home'),
+    path('FAQ', views.faq, name='faq'),
 
     # About urls
     path('about', views.about, name='about'),
@@ -17,9 +19,11 @@ urlpatterns = [
     path('article/create', views.article_create, name='article_create'),
     path('article/<slug:slug>', views.article_detail, name='article_detail'),
 
-    # Pages
+    # Contact
     path('contact', views.contact, name='contact'),
-    path('FAQ', views.faq, name='faq'),
+    path('contact/messages', views.contact_message_list, name='contact_message_list'),
+    path('contact/messages/<int:pk>/json', views.contact_message_json_detail, name='contact_message_json_detail'),
+    path('contact/messages/<int:pk>/check', views.contact_message_check, name='contact_message_check'),
 
     # User views
     path('registration', views.registration, name='registration'),

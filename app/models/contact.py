@@ -8,6 +8,8 @@ class ContactMessage(BaseModel):
     email = models.EmailField("E-mail")
     subject = models.CharField("Тақырып", max_length=200)
     message = models.TextField("Хабарлама")
+    file = models.FileField(upload_to="contact_message", null=True, blank=True)
+    is_checked = models.BooleanField(default=False, null=True, blank=True)
 
     class Meta:
         verbose_name = "Байланыс хаты"

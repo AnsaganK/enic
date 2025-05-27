@@ -128,7 +128,7 @@ LOCALE_PATHS = [
     BASE_DIR / 'locale',
 ]
 
-TIME_ZONE = 'UTC'
+TIME_ZONE = 'Asia/Almaty'
 
 USE_I18N = True
 
@@ -143,6 +143,10 @@ STATIC_ROOT = BASE_DIR / STATIC_URL
 
 MEDIA_URL = 'media/'
 MEDIA_ROOT = BASE_DIR / MEDIA_URL
+
+# Recaptcha
+RECAPTCHA_PUBLIC_KEY = '6Le4KEsrAAAAAAx49MnCdMLr_tuNqH1IPI187qWD'
+RECAPTCHA_PRIVATE_KEY = '6Le4KEsrAAAAACxkSjognUg1N72F3W5ybszbhoyR'
 
 # Default primary key field type
 # https://docs.djangoproject.com/en/5.2/ref/settings/#default-auto-field

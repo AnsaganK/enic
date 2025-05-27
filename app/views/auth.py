@@ -11,7 +11,7 @@ def registration(request):
         if form.is_valid():
             user = form.save()
             login(request, user)
-            messages.success(request, 'Вы успешно зарегистрировались!')
+            # messages.success(request, 'Вы успешно зарегистрировались!')
             return redirect('app:home')
         else:
             print(form.errors)

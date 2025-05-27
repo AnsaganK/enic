@@ -46,6 +46,13 @@
             <div class="row gy-4">
 
                 <div class="col-lg-4">
+                    {% if request.user.is_superuser %}
+                        <a href="{% url 'app:contact_message_list' %}" class="btn text-white w-100" style="background: var(--accent-color)">
+                            <i class="bi bi-list-task me-2"></i>
+                            {% trans 'Барлық өтінімдер' %}
+                        </a>
+                        <hr>
+                    {% endif %}
                     <div class="info-item d-flex aos-init aos-animate" data-aos="fade-up" data-aos-delay="300">
                         <i class="bi bi-geo-alt flex-shrink-0"></i>
                         <div>
@@ -74,12 +81,13 @@
 
                 <div class="col-lg-8">
                     <form action="#" method="post" class="php-email-form aos-init aos-animate"
-                          data-aos="fade-up" data-aos-delay="200">
+                          data-aos="fade-up" data-aos-delay="200" enctype="multipart/form-data">
                         {% csrf_token %}
                         <div class="row gy-4">
 
                             <div class="col-md-6">
-                                <input type="text" name="name" class="form-control" placeholder="{% trans 'Аты' %}" required="">
+                                <input type="text" name="name" class="form-control" placeholder="{% trans 'Аты' %}"
+                                       required="" maxlength="100">
                             </div>
 
                             <div class="col-md-6 ">
@@ -88,14 +96,22 @@
                             </div>
 
                             <div class="col-md-12">
-                                <input type="text" class="form-control" name="subject" placeholder="{% trans 'Тақырып' %}"
-                                       required="">
+                                <input type="text" class="form-control" name="subject"
+                                       placeholder="{% trans 'Тақырып' %}"
+                                       required="" maxlength="200">
                             </div>
 
                             <div class="col-md-12">
-                                <textarea class="form-control" name="message" rows="6" placeholder="{% trans 'Хабарлама' %}"
+                                <textarea class="form-control" name="message" rows="6"
+                                          placeholder="{% trans 'Хабарлама' %}"
                                           required=""></textarea>
                             </div>
+
+                            <div class="col-md-12">
+                                <input type="file" class="form-control" name="file"
+                                       placeholder="{% trans 'Файл' %}" maxlength="200">
+                            </div>
+                            <div class="g-recaptcha" data-sitekey="{{ site_key }}"></div>
 
                             <div class="col-md-12 text-center">
                                 <div class="loading">{% trans 'Күтіңіз' %}</div>
@@ -104,6 +120,7 @@
 
                                 <button type="submit">{% trans 'Жіберу' %}</button>
                             </div>
+
 
                         </div>
                     </form>
@@ -115,4 +132,8 @@
 
     </section>
 
+{% endblock %}
+
+{% block script %}
+    <script src="https://www.google.com/recaptcha/api.js" async defer></script>
 {% endblock %}
