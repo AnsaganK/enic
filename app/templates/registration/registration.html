@@ -1,7 +1,8 @@
 {% extends 'base.html' %}
+{% load i18n %}
 
 {% block title %}
-    Киру
+    {% trans 'Тіркелу' %}
 {% endblock %}
 
 {% block content %}
@@ -9,8 +10,8 @@
         <nav class="breadcrumbs">
             <div class="container">
                 <ol>
-                    <li><a href="{% url 'app:home' %}">Басты</a></li>
-                    <li class="current">Киру<br></li>
+                    <li><a href="{% url 'app:home' %}">{% trans 'Басты' %}</a></li>
+                    <li class="current">{% trans 'Кіру' %}<br></li>
                 </ol>
             </div>
         </nav>
@@ -23,25 +24,27 @@
                 {% csrf_token %}
                 <div class="row gy-4 justify-content-center flex-column align-items-center">
                     <div class="col-md-6">
-                        <input type="email" name="username" class="form-control" placeholder="Почта" required="">
+                        <input type="email" name="username" class="form-control" placeholder="Email" required="">
                     </div>
                     <div class="col-md-6">
-                        <input type="password" class="form-control" name="password1" placeholder="Купиясоз" required="">
+                        <input type="password" class="form-control" name="password1"
+                               placeholder="{% trans 'Құпиясөз' %}" required="">
                     </div>
                     <div class="col-md-6">
-                        <input type="password" class="form-control" name="password2" placeholder="Купиясоз" required="">
+                        <input type="password" class="form-control" name="password2"
+                               placeholder="{% trans 'Құпиясөз' %}" required="">
                     </div>
                     <div class="col-md-12 text-center">
                         <button type="submit" class="btn text-white" style="background: var(--accent-color)">
-                            Регистрация
+                            {% trans 'Тіркелу' %}
                         </button>
                     </div>
                 </div>
             </form>
             <hr>
             <span class="text-center d-block">
-                Аккаунт бар ма?
-                <br><a href="{% url 'login' %}">Киру</a>
+                {% trans 'Тіркелгенсіз бе' %}?
+                <br><a href="{% url 'login' %}">{% trans 'Кіру' %}</a>
             </span>
         </div>
     </section>

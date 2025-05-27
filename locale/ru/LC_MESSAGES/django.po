@@ -1,0 +1,537 @@
+# SOME DESCRIPTIVE TITLE.
+# Copyright (C) YEAR THE PACKAGE'S COPYRIGHT HOLDER
+# This file is distributed under the same license as the PACKAGE package.
+# FIRST AUTHOR <EMAIL@ADDRESS>, YEAR.
+#
+#, fuzzy
+msgid ""
+msgstr ""
+"Project-Id-Version: PACKAGE VERSION\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2025-05-27 14:27+0500\n"
+"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
+"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
+"Language-Team: LANGUAGE <LL@li.org>\n"
+"Language: \n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Plural-Forms: nplurals=4; plural=(n%10==1 && n%100!=11 ? 0 : n%10>=2 && "
+"n%10<=4 && (n%100<12 || n%100>14) ? 1 : n%10==0 || (n%10>=5 && n%10<=9) || "
+"(n%100>=11 && n%100<=14)? 2 : 3);\n"
+
+#: app/templates/app/about/about.html:5 app/templates/app/about/about.html:14
+#: app/templates/app/about/about.html:26
+#: app/templates/app/about/memorandum.html:27
+#: app/templates/app/about/social_life.html:27
+#: app/templates/app/about/strategy.html:27
+#: app/templates/app/about/structure.html:27 app/templates/base.html:68
+#: app/templates/base.html:188
+msgid "Орталық туралы"
+msgstr "О центре"
+
+#: app/templates/app/about/about.html:16
+#: app/templates/app/about/memorandum.html:17
+#: app/templates/app/about/social_life.html:17
+#: app/templates/app/about/strategy.html:17
+#: app/templates/app/about/structure.html:17
+#: app/templates/app/article/list.html:16
+#: app/templates/app/page/contact.html:17
+#: app/templates/app/user/cabinet.html:16
+msgid "ЖОҒАРЫ БІЛІМ БЕРУДІ ДАМЫТУ ҰЛТТЫҚ ОРТАЛЫҒЫ"
+msgstr "НАЦИОНАЛЬНЫЙ ЦЕНТР РАЗВИТИЯ ВЫСШЕГО ОБРАЗОВАНИЯ"
+
+#: app/templates/app/about/about.html:25
+#: app/templates/app/about/memorandum.html:26
+#: app/templates/app/about/social_life.html:26
+#: app/templates/app/about/strategy.html:26
+#: app/templates/app/about/structure.html:26
+#: app/templates/app/article/list.html:25
+#: app/templates/app/page/contact.html:26
+#: app/templates/app/user/cabinet.html:25 app/templates/base.html:64
+#: app/templates/registration/login.html:13
+#: app/templates/registration/registration.html:13
+msgid "Басты"
+msgstr "Главная"
+
+#: app/templates/app/about/about.html:35
+msgid "Орталықтың тарихы"
+msgstr "История центра"
+
+#: app/templates/app/about/about.html:38
+msgid ""
+"\n"
+"                            ҚР ҒЖБМ \"Жоғары білім беруді дамыту ұлттық "
+"орталығы\" ШЖҚ РМК –\n"
+"                            Қазақстан Республикасы Ғылым және жоғары білім "
+"министрлігінің ведомстволық бағынышты ұйымы.\n"
+"                        "
+msgstr ""
+"РГП на ПХВ 'Национальный Центр развития высшего образования' МНВО РК \n"
+" – подведомственная организация Министерства науки и высшего образования "
+"Республики Казахстан."
+
+#: app/templates/app/about/about.html:45
+msgid ""
+"\n"
+"                            Қазақстан 2010 жылы Болон Декларациясына қол "
+"қойып, Болон процесіне\n"
+"                            қатысушы елдер қатарында 47 орынға ие болды "
+"жәнеЕуропалық білім кеңістігінің толық құқықты\n"
+"                            мүшесі болып танылған бірінші Орта-азиялық "
+"мемлекет.\n"
+"                        "
+msgstr ""
+"Казахстан подписав, Болонскую Декларацию в 2010 году, стал 47-й страной-"
+"участницей Болонского процесса и первым центрально-азиатским государством, "
+"признанным полноправным членом Европейского образовательного пространства."
+
+#: app/templates/app/about/about.html:53
+msgid ""
+"\n"
+"                            Әр қатысушы ел Болон процесінің міндетті, "
+"ұсыныстық және қосымша\n"
+"                            параметрлері бойынша өзіне міндеттемелер "
+"қабылдайды.\n"
+"                        "
+msgstr ""
+"Каждая страна-участница принимает на себя обязательства по исполнению "
+"обязательных, рекомендательных и факультативных параметров Болонского "
+"процесса."
+
+#: app/templates/app/about/about.html:60
+msgid ""
+"\n"
+"                            Орталық 2012 жылдың 31 тамызында Қазақстан "
+"Республикасында ұлттық\n"
+"                            деңгейде Болон процесі параметрлерінің жүзеге "
+"асырылуын әдістемелік, ғылыми-әдістемелік және\n"
+"                            ақпараттық-талдамалық сүйемелдеу мақсатында "
+"құрылды.\n"
+"                        "
+msgstr ""
+"Центр создан 31 августа 2012 года в целях методологического, научно-"
+"методического и информационно-аналитического сопровождения реализации "
+"параметров Болонского процесса в Республике Казахстан на национальном уровне."
+
+#: app/templates/app/about/about.html:68
+msgid ""
+"\n"
+"                            Негіздеме - Қазақстан Республикасы Президентінің "
+"2010 жылғы7\n"
+"                            желтоқсандағы №1118 «Қазақстан Республикасында "
+"білім беруді дамытудың 2011 - 2020 жылдарға\n"
+"                            арналған мемлекеттік бағдарламасын бекіту "
+"туралы» Жарлығы.\n"
+"                        "
+msgstr ""
+"Основание - Указ Президента Республики Казахстан от 7 декабря 2010 года "
+"№1118 «Об утверждении Государственной программы развития образования "
+"Республики Казахстан на 2011-2020 годы»."
+
+#: app/templates/app/about/about.html:75
+msgid "ҚЫЗМЕТІНІҢ НЕГІЗГІ ПРИНЦИПТЕРІ"
+msgstr "Основные принципы деятельности"
+
+#: app/templates/app/about/about.html:79
+msgid "Қазақстанның жоғары оқу орындарымен өзара әрекеттесу және ашықтық"
+msgstr "Открытость и взаимодействие с высшими учебными заведениями Казахстана "
+
+#: app/templates/app/about/about.html:82
+msgid "Барлық мүдделі тараптардың ақпаратқа қол жетімділігі"
+msgstr "Доступность к информации всех заинтересованных сторон"
+
+#: app/templates/app/about/about.html:83
+msgid "Басқару мен шешімдер қабылдаудағы алқалылық"
+msgstr "Коллегиальность в управлении и принятии решений."
+
+#: app/templates/app/about/about.html:97
+#: app/templates/app/about/strategy.html:6
+#: app/templates/app/about/strategy.html:15
+#: app/templates/app/about/strategy.html:28
+#: app/templates/app/about/strategy.html:37 app/templates/base.html:71
+#: app/templates/base.html:190
+msgid "Стратегиясы және міндеті"
+msgstr "Стратегия и миссия"
+
+#: app/templates/app/about/about.html:105
+#: app/templates/app/about/structure.html:6
+#: app/templates/app/about/structure.html:15
+#: app/templates/app/about/structure.html:28 app/templates/base.html:72
+#: app/templates/base.html:191
+msgid "Құрылымы"
+msgstr "Структура"
+
+#: app/templates/app/about/about.html:112
+#: app/templates/app/about/memorandum.html:6
+#: app/templates/app/about/memorandum.html:15
+#: app/templates/app/about/memorandum.html:28 app/templates/base.html:73
+#: app/templates/base.html:192
+msgid "Орталықтың Меморандумдары"
+msgstr "Меморандумы центра"
+
+#: app/templates/app/about/about.html:119
+#: app/templates/app/about/social_life.html:6
+#: app/templates/app/about/social_life.html:15
+#: app/templates/app/about/social_life.html:28 app/templates/base.html:74
+#: app/templates/base.html:193
+msgid "Қоғамдық өмір"
+msgstr "Общественная жизнь"
+
+#: app/templates/app/about/memorandum.html:36
+msgid "Пресс - релиз, 2023 жылғы 2 мамырда"
+msgstr "Пресс-релиз, 2 мая 2023 г."
+
+#: app/templates/app/about/memorandum.html:39
+msgid ""
+"\n"
+"                        Бүгін, 2023 жылғы 2 мамырда, Жоғары білім беруді "
+"дамыту ұлттық орталығының директоры А.А.\n"
+"                        Мухатаев\n"
+"                        пен Еңбек ресурстарын дамыту орталығының президенті "
+"Д.Р. Аргандыков, Қазақстан Республикасы\n"
+"                        Ғылым\n"
+"                        және жоғары білім министрлігінің «Жоғары білім "
+"беруді дамыту ұлттық орталығы» ШЖҚ РМК мен\n"
+"                        Қазақстан\n"
+"                        Республикасы Еңбек және халықты әлеуметтік қорғау "
+"министрлігінің «Еңбек ресурстарын дамыту\n"
+"                        орталығы»\n"
+"                        АҚ арасында ынтымақтастық және өзара іс-қимыл туралы "
+"Меморандумға қол қойды.\n"
+"                    "
+msgstr ""
+"Сегодня, 2 мая 2023 года, директор Национального центра развития высшего "
+"образования А.А. Мухатаев и президент Центра развития человеческих ресурсов "
+"Д.Р. Аргандыков подписал Меморандум о сотрудничестве и взаимодействии между "
+"РГП Министерства науки и высшего образования Республики Казахстан "
+"«Национальный центр развития высшего образования» и АО «Центр развития "
+"трудовых ресурсов» Министерства труда и социальной защиты населения "
+"Республики Казахстан."
+
+#: app/templates/app/about/memorandum.html:53
+msgid ""
+"\n"
+"                        Ынтымақтастық білім беру бағдарламаларын әзірлеу "
+"кезінде кәсіби стандарттарды пайдалануда және\n"
+"                        Ұлттық\n"
+"                        біліктілік жүйесін іске асыруда тараптардың тиімді "
+"өзара іс-қимылына бағытталған.\n"
+"                    "
+msgstr ""
+"Сотрудничество направлено на эффективное взаимодействие сторон по "
+"использованию профессиональных стандартов при разработке образовательных "
+"программ и внедрении Национальной системы квалификаций."
+
+#: app/templates/app/about/memorandum.html:61
+msgid ""
+"\n"
+"                        Екі орталықтың бірлескен қызметі Ұлттық біліктілік "
+"жүйесі мен білікті кадрларды даярлау жүйесін\n"
+"                        әдіснамалық қолдауды қалыптастыру үшін негіз "
+"болады.\n"
+"                    "
+msgstr ""
+"Совместная деятельность двух центров послужит основой формирования "
+"Национальной системы квалификаций и методического обеспечения системы "
+"подготовки квалифицированных кадров."
+
+#: app/templates/app/about/social_life.html:36
+msgid "Бірге – таза Қазақстан"
+msgstr "Вместе – за чистый Казахстан"
+
+#: app/templates/app/about/social_life.html:39
+msgid ""
+"\n"
+"                        Біздің өміріміздегі жасыл желектердің рөлін бағалау "
+"мүмкін емес. Олар адам өміріне әсер етіп\n"
+"                        қана\n"
+"                        қоймайды, сонымен бірге экологиялық қауіпсіздіктің "
+"кепілі болып табылады. «Бірге - таза\n"
+"                        Қазақстан!»\n"
+"                        экологиялық акциясы аясында 2021 жылы 1 мамырда "
+"Болон процесі және академиялық ұтқырлық орталығы\n"
+"                        жалпықалалық сенбілікке қатысты, сенбіліктің форматы "
+"- ағаш отырғызу. Бұл ағаш отырғызу науқаны\n"
+"                        көгалдандыру мен қоршаған ортаны қорғаудың тағы бір "
+"жарқын мысалы болды.\n"
+"                    "
+msgstr ""
+"Роль зелени в нашей жизни невозможно переоценить. Они не только влияют на "
+"жизнь человека, но и служат гарантией экологической безопасности. «Вместе — "
+"чистый Казахстан!» В рамках экологической акции 1 мая 2021 года Болонский "
+"процесс и Центр академической мобильности приняли участие в общегородском "
+"саббатикале, форматом которого стала посадка деревьев. Эта кампания по "
+"посадке деревьев стала еще одним ярким примером озеленения и защиты "
+"окружающей среды."
+
+#: app/templates/app/about/strategy.html:39
+msgid "Миссия"
+msgstr "Миссия"
+
+#: app/templates/app/about/strategy.html:40
+msgid ""
+"\n"
+"                            Қазақстанның жоғары және жоғары оқу орнынан "
+"кейінгі білім беру жүйесіне Болон процесі\n"
+"                            параметрлерін ендіруді ғылыми-әдістемелік және "
+"ақпараттық-талдамалық қолдау.\n"
+"                        "
+msgstr ""
+"Научно-методическое и информационно-аналитическое обеспечение внедрения "
+"параметров Болонского процесса в систему высшего и послевузовского "
+"образования Казахстана."
+
+#: app/templates/app/about/strategy.html:47
+msgid "Этот браузер не поддерживает PDF просмотр."
+msgstr ""
+
+#: app/templates/app/article/list.html:5 app/templates/app/article/list.html:14
+#: app/templates/app/article/list.html:26 app/templates/base.html:78
+msgid "Жаңалыктар"
+msgstr "Новости"
+
+#: app/templates/app/page/contact.html:6 app/templates/app/page/contact.html:15
+#: app/templates/app/page/contact.html:27 app/templates/app/page/home.html:170
+#: app/templates/base.html:81
+msgid "Байланыс"
+msgstr "Контакты"
+
+#: app/templates/app/page/contact.html:52
+msgid "Мекен-жай"
+msgstr "Адрес"
+
+#: app/templates/app/page/contact.html:53
+msgid "Қазақстан Республикасы, Астана қ., Сығанақ көшесі, 70, № 202 кеңсе"
+msgstr "Республика Казахстан, г. Астана, ул. Сыганак, 70, офис № 202"
+
+#: app/templates/app/page/contact.html:60
+msgid "Телефон"
+msgstr "Телефон"
+
+#: app/templates/app/page/contact.html:82
+#: app/templates/app/user/cabinet.html:44
+msgid "Аты"
+msgstr "Имя"
+
+#: app/templates/app/page/contact.html:91
+msgid "Тақырып"
+msgstr "Тема"
+
+#: app/templates/app/page/contact.html:96
+msgid "Хабарлама"
+msgstr "Сообщение"
+
+#: app/templates/app/page/contact.html:101
+msgid "Күтіңіз"
+msgstr "Ждите"
+
+#: app/templates/app/page/contact.html:103
+msgid "Хабарлама жіберілді"
+msgstr "Заявка отправлена"
+
+#: app/templates/app/page/contact.html:105
+msgid "Жіберу"
+msgstr "Отправить"
+
+#: app/templates/app/page/home.html:6
+msgid "Басты бет"
+msgstr "Главная страница"
+
+#: app/templates/app/page/home.html:19
+msgid ""
+"Білімге жол<br> болашаққа бастар\n"
+"                        бағыт"
+msgstr ""
+"Путь к знаниям <br>"
+"направление на будущее"
+
+#: app/templates/app/page/home.html:23
+msgid "Жоғары білімді дамытудың заманауи платформасы"
+msgstr "Современная платформа для развития высшего образования"
+
+#: app/templates/app/page/home.html:25
+msgid "Өтінім жіберу"
+msgstr "Отправить заявку"
+
+#: app/templates/app/page/home.html:43
+msgid "Жоғары білім туралы өзекті ақпарат бір жерде"
+msgstr "Актуальная информация о высшем образовании в одном месте"
+
+#: app/templates/app/page/home.html:45
+msgid ""
+"ENIC.KZ — құжаттарды тану, аккредитация және Болон үдерісі бойынша ресми "
+"портал."
+msgstr ""
+"ENIC.KZ — официальный портал по признанию документов, аккредитации и "
+"Болонскому процессу"
+
+#: app/templates/app/page/home.html:49
+msgid "ЖОО аккредитациясын тексеру"
+msgstr "Проверка аккредитации университета"
+
+#: app/templates/app/page/home.html:52
+msgid "Дипломды тануға онлайн өтінім беру"
+msgstr "Подать заявку онлайн на признание диплома"
+
+#: app/templates/app/page/home.html:54
+msgid "Болон үдерісімен танысу"
+msgstr "Введение в Болонский процесс"
+
+#: app/templates/app/page/home.html:57
+msgid "Тағы"
+msgstr "Далее"
+
+#: app/templates/app/page/home.html:78 app/templates/base.html:85
+msgid "ЖОО"
+msgstr "ВУЗ"
+
+#: app/templates/app/page/home.html:86
+msgid "Студент"
+msgstr "Студент"
+
+#: app/templates/app/page/home.html:94
+msgid "Студент косылды"
+msgstr "Добавилось студентов"
+
+#: app/templates/app/page/home.html:108
+msgid "Күндізгі форматта"
+msgstr "Очная форма"
+
+#: app/templates/app/page/home.html:128
+msgid "ЖОО тізімі"
+msgstr "Список ВУЗов"
+
+#: app/templates/app/page/home.html:135 app/templates/app/page/home.html:142
+msgid "Болон процесі"
+msgstr "Болонский процесс"
+
+#: app/templates/app/page/home.html:149
+msgid "Дипломды тану"
+msgstr "Признание диплома"
+
+#: app/templates/app/page/home.html:156 app/templates/base.html:83
+msgid "Сұрақ-жауап"
+msgstr "Вопрос-ответ"
+
+#: app/templates/app/page/home.html:163
+msgid "Калькулятор"
+msgstr "Калькулятор"
+
+#: app/templates/app/page/home.html:177
+msgid "Сарапшылар"
+msgstr "Эксперты"
+
+#: app/templates/app/page/home.html:184
+msgid "Қызметтер"
+msgstr "Сервисы"
+
+#: app/templates/app/page/home.html:191
+msgid "Өтініш күйін тексеру"
+msgstr "Проверить статус заявки"
+
+#: app/templates/app/page/home.html:198
+msgid "Оқу бағдарламалары"
+msgstr "Учебные программы"
+
+#: app/templates/app/page/home.html:205
+msgid "Пікір қалдыру"
+msgstr "Оставить отзыв"
+
+#: app/templates/app/page/home.html:220
+msgid "Жаңалықтар"
+msgstr "Новости"
+
+#: app/templates/app/page/home.html:221
+msgid "Соңғы жаңалыктар"
+msgstr "Актуальные новости"
+
+#: app/templates/app/page/home.html:247
+msgid "Басшылық құрам"
+msgstr "Начальствующий состав"
+
+#: app/templates/app/page/home.html:257
+msgid "ДИРЕКТОР"
+msgstr "ДИРЕКТОР"
+
+#: app/templates/app/page/home.html:271 app/templates/app/page/home.html:288
+#: app/templates/app/page/home.html:304
+msgid "ДИРЕКТОР ОРЫНБАСАРЫ"
+msgstr "Заместитель директора"
+
+#: app/templates/app/page/home.html:320
+msgid "ДИРЕКТОР КЕҢЕСШІСІ"
+msgstr "Советник директора"
+
+#: app/templates/app/user/cabinet.html:5 app/templates/app/user/cabinet.html:14
+#: app/templates/app/user/cabinet.html:26
+msgid "Жеке кабинет"
+msgstr "Личный кабинет"
+
+#: app/templates/app/user/cabinet.html:48
+msgid "Жөні"
+msgstr "Фамилия"
+
+#: app/templates/app/user/cabinet.html:54
+msgid "Өзгерту"
+msgstr "Изменить"
+
+#: app/templates/app/user/cabinet.html:64
+msgid "Шығу"
+msgstr "Выйти"
+
+#: app/templates/base.html:124
+msgid "Кабинет"
+msgstr "Кабинет"
+
+#: app/templates/base.html:179
+msgid "Пайдалы сілтемелер"
+msgstr "Полезные ссылки"
+
+#: app/templates/base.html:181
+msgid "Сатып алулар"
+msgstr "Закупки"
+
+#: app/templates/base.html:182
+msgid "Жұмыс орындары"
+msgstr "Вакансии"
+
+#: app/templates/base.html:183
+msgid "Құпиялылық саясаты"
+msgstr "Политика конфиденциальности"
+
+#: app/templates/registration/login.html:5
+#: app/templates/registration/login.html:14
+#: app/templates/registration/login.html:44
+#: app/templates/registration/registration.html:14
+#: app/templates/registration/registration.html:47
+msgid "Кіру"
+msgstr "Вход"
+
+#: app/templates/registration/login.html:24
+msgid "Сіз жүйеге кірдіңіз"
+msgstr "Вы авторизованиы"
+
+#: app/templates/registration/login.html:26
+msgid "Басты бетке"
+msgstr "На главную"
+
+#: app/templates/registration/login.html:39
+#: app/templates/registration/registration.html:31
+#: app/templates/registration/registration.html:35
+msgid "Құпиясөз"
+msgstr "Пароль"
+
+#: app/templates/registration/login.html:51
+msgid "Тіркелмегенсіз бе"
+msgstr "Не зарегистрированы"
+
+#: app/templates/registration/login.html:52
+#: app/templates/registration/registration.html:5
+#: app/templates/registration/registration.html:39
+msgid "Тіркелу"
+msgstr "Регистрация"
+
+#: app/templates/registration/registration.html:46
+msgid "Тіркелгенсіз бе"
+msgstr "Зарегистрированы"

@@ -160,49 +160,49 @@
                     <div class="col-lg-3 col-md-4" data-aos="fade-up" data-aos-delay="600">
                         <div class="features-item">
                             <i class="bi bi-calculator" style="color: #ffa76e;"></i>
-                            <h3><a href="" class="stretched-link">Калькулятор</a></h3>
+                            <h3><a href="" class="stretched-link">{% trans 'Калькулятор' %}</a></h3>
                         </div>
                     </div><!-- End Feature Item -->
 
                     <div class="col-lg-3 col-md-4" data-aos="fade-up" data-aos-delay="700">
                         <div class="features-item">
                             <i class="bi bi-envelope" style="color: #11dbcf;"></i>
-                            <h3><a href="" class="stretched-link">Байланыс</a></h3>
+                            <h3><a href="" class="stretched-link">{% trans 'Байланыс' %}</a></h3>
                         </div>
                     </div><!-- End Feature Item -->
 
                     <div class="col-lg-3 col-md-4" data-aos="fade-up" data-aos-delay="800">
                         <div class="features-item">
                             <i class="bi bi-person-lines-fill" style="color: #4233ff;"></i>
-                            <h3><a href="" class="stretched-link">Сарапшылар</a></h3>
+                            <h3><a href="" class="stretched-link">{% trans 'Сарапшылар' %}</a></h3>
                         </div>
                     </div><!-- End Feature Item -->
 
                     <div class="col-lg-3 col-md-4" data-aos="fade-up" data-aos-delay="900">
                         <div class="features-item">
                             <i class="bi bi-gear" style="color: #b2904f;"></i>
-                            <h3><a href="" class="stretched-link">Қызметтер</a></h3>
+                            <h3><a href="" class="stretched-link">{% trans 'Қызметтер' %}</a></h3>
                         </div>
                     </div><!-- End Feature Item -->
 
                     <div class="col-lg-3 col-md-4" data-aos="fade-up" data-aos-delay="1000">
                         <div class="features-item">
                             <i class="bi bi-clock-history" style="color: #b20969;"></i>
-                            <h3><a href="" class="stretched-link">Өтініш күйін тексеру</a></h3>
+                            <h3><a href="" class="stretched-link">{% trans 'Өтініш күйін тексеру' %}</a></h3>
                         </div>
                     </div><!-- End Feature Item -->
 
                     <div class="col-lg-3 col-md-4" data-aos="fade-up" data-aos-delay="1100">
                         <div class="features-item">
                             <i class="bi bi-book" style="color: #ff5828;"></i>
-                            <h3><a href="" class="stretched-link">Оқу бағдарламалары</a></h3>
+                            <h3><a href="" class="stretched-link">{% trans 'Оқу бағдарламалары' %}</a></h3>
                         </div>
                     </div><!-- End Feature Item -->
 
                     <div class="col-lg-3 col-md-4" data-aos="fade-up" data-aos-delay="1200">
                         <div class="features-item">
                             <i class="bi bi-pen" style="color: #29cc61;"></i>
-                            <h3><a href="" class="stretched-link">Пікір қалдыру</a></h3>
+                            <h3><a href="" class="stretched-link">{% trans 'Пікір қалдыру' %}</a></h3>
                         </div>
                     </div><!-- End Feature Item -->
 
@@ -229,10 +229,8 @@
                             <div class="course-item">
                                 <img src="{% static 'app/img/course-1.jpg' %}" class="img-fluid" alt="...">
                                 <div class="course-content">
-                                    <h3><a href="course-details.html">Website Design</a></h3>
-                                    <p class="description">Et architecto provident deleniti facere repellat nobis iste.
-                                        Id
-                                        facere quia quae dolores dolorem tempore.</p>
+                                    <h3><a href="{{ article.get_absolute_url }}">{{ article.title }}</a></h3>
+                                    <p class="description">{{ article.content|truncatewords_html:10 }}</p>
                                 </div>
                             </div>
                         </div> <!-- End Course Item-->
