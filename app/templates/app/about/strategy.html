@@ -1,0 +1,49 @@
+{% extends 'base.html' %}
+{% load static %}
+
+{% block title %}
+    Стратегиясы және міндеті
+{% endblock %}
+
+{% block content %}
+    <div class="page-title aos-init aos-animate" data-aos="fade">
+        <div class="heading">
+            <div class="container">
+                <div class="row d-flex justify-content-center text-center">
+                    <div class="col-lg-8">
+                        <h1>Стратегиясы және міндеті<br></h1>
+                        <p class="mb-0">
+                            ЖОҒАРЫ БІЛІМ БЕРУДІ ДАМЫТУ ҰЛТТЫҚ ОРТАЛЫҒЫ
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <nav class="breadcrumbs">
+            <div class="container">
+                <ol>
+                    <li><a href="{% url 'app:home' %}">Басты</a></li>
+                    <li><a href="{% url 'app:about' %}">Орталық туралы</a></li>
+                    <li class="current">Стратегиясы және міндеті<br></li>
+                </ol>
+            </div>
+        </nav>
+    </div>
+
+    <section class="section">
+        <div class="container">
+            <div class="page__content">
+                <h1 class="pageName">Стратегиясы және міндеті</h1>
+                <div class="secretary__block directors">
+                    <p><strong>Миссия</strong><br>
+                        Қазақстанның жоғары және жоғары оқу орнынан кейінгі білім беру жүйесіне Болон процесі
+                        параметрлерін ендіруді ғылыми-әдістемелік және ақпараттық-талдамалық қолдау.</p>
+                </div>
+                <iframe src="{% static 'app/docs/strategy_cbp_am_2020.pdf' %}" width="100%" height="600px">
+                    Этот браузер не поддерживает PDF просмотр.
+                </iframe>
+            </div>
+        </div>
+    </section>
+
+{% endblock %}

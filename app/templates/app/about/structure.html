@@ -1,0 +1,224 @@
+{% extends 'base.html' %}
+{% load static %}
+
+{% block title %}
+    Құрылымы
+{% endblock %}
+
+{% block content %}
+    <div class="page-title aos-init aos-animate" data-aos="fade">
+        <div class="heading">
+            <div class="container">
+                <div class="row d-flex justify-content-center text-center">
+                    <div class="col-lg-8">
+                        <h1>Құрылымы<br></h1>
+                        <p class="mb-0">
+                            ЖОҒАРЫ БІЛІМ БЕРУДІ ДАМЫТУ ҰЛТТЫҚ ОРТАЛЫҒЫ
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <nav class="breadcrumbs">
+            <div class="container">
+                <ol>
+                    <li><a href="{% url 'app:home' %}">Басты</a></li>
+                    <li><a href="{% url 'app:about' %}">Орталық туралы</a></li>
+                    <li class="current">Құрылымы<br></li>
+                </ol>
+            </div>
+        </nav>
+    </div>
+
+    <section id="trainers" class="section trainers">
+
+        <div class="container">
+
+            <div class="row gy-5">
+
+                <div class="col-lg-4 col-md-6 member aos-init aos-animate" data-aos="fade-up" data-aos-delay="100">
+                    <div class="member-img">
+                        <img src="{% static 'app/img/structure/s_1.png' %}" class="img-fluid"
+                             alt="Ордабаев Абылай Жунисалиевич">
+                        <div class="social text-white flex-column">
+                            <span><i class="bi bi-envelope me-1"></i>a.ordabayev@n-k.kz</span><br>
+                        </div>
+                    </div>
+                    <div class="member-info text-center">
+                        <h4>Ордабаев Абылай Жунисалиевич</h4>
+                        <span>Коммуникациялық жобалар тобының басшысы</span>
+                        <p></p>
+                    </div>
+                </div><!-- End Team Member -->
+
+                <div class="col-lg-4 col-md-6 member aos-init aos-animate" data-aos="fade-up" data-aos-delay="100">
+                    <div class="member-img">
+                        <img src="{% static 'app/img/structure/s_2.png' %}" class="img-fluid"
+                             alt="АЙТЖАН МУРАТОВНА КУЛУМЖАНОВА">
+                        <div class="social text-white flex-column">
+                            <span><i class="bi bi-envelope me-1"></i>a.kulumzhanova@n-k.kz</span><br>
+                            <span><i class="bi bi-phone me-1"></i>+7 7172 572 017 </span>
+                        </div>
+                    </div>
+                    <div class="member-info text-center">
+                        <h4>АЙТЖАН МУРАТОВНА КУЛУМЖАНОВА</h4>
+                        <span>Жоғары білім беруді интернационалдандыру офисі басшысы</span>
+                        <p>
+                            Қазақстанның жоғары оқу орындарында Болон процесінің негізгі параметрлерін іске асыру
+                            мониторингі, интернационалдандыру стратегиясы
+                    </div>
+                </div><!-- End Team Member -->
+
+                <div class="col-lg-4 col-md-6 member aos-init aos-animate" data-aos="fade-up" data-aos-delay="100">
+                    <div class="member-img">
+                        <img src="{% static 'app/img/structure/s_3.png' %}" class="img-fluid"
+                             alt="АМИНА АКЗАТОВНА МУХАМБЕТОВА">
+                        <div class="social text-white flex-column">
+                            <span><i class="bi bi-envelope me-1"></i>a.mukhambetova@n-k.kz</span><br>
+                            <span><i class="bi bi-phone me-1"></i>+7 (7172) 57-20-78</span>
+                        </div>
+                    </div>
+                    <div class="member-info text-center">
+                        <h4>АМИНА АКЗАТОВНА МУХАМБЕТОВА</h4>
+                        <span>Жоғары білім мазмұнын басқару офисі басшысы</span>
+                        <p>
+                            Қазақстан Республикасының Жоғары және жоғары оқу орнынан кейінгі білім беру
+                            бағдарламаларының Тізілімін сүйемелдеу және білім беру бағдарламаларының сапасын сараптау
+                            мен Тізілімге енгізу арқылы қамтамасыз ету.
+                        </p>
+                    </div>
+                </div><!-- End Team Member -->
+
+                <div class="col-lg-4 col-md-6 member aos-init aos-animate" data-aos="fade-up" data-aos-delay="100">
+                    <div class="member-img">
+                        <img src="{% static 'app/img/structure/s_4.png' %}" class="img-fluid"
+                             alt="Байтугелова Роза Ержетбайкызы">
+                        <div class="social text-white flex-column">
+                            <span><i class="bi bi-envelope me-1"></i>r.baitugelova@n-k.kz</span><br>
+                            <span><i class="bi bi-phone me-1"></i>+7 (7172) 57-20-83</span><br>
+                        </div>
+                    </div>
+                    <div class="member-info text-center">
+                        <h4>Байтугелова Роза Ержетбайкызы</h4>
+                        <span>Академиялық тану офисі басшысы</span>
+                        <p>
+                            1) «Жоғары және жоғары оқу орнынан кейінгі білім туралы құжаттарды тану» мемлекеттік
+                            қызметін көрсету бойынша жұмыстар; <br>
+                            2) «Орта, техникалық және кәсіптік, орта білімнен кейінгі білім туралы құжаттарды тану»
+                            мемлекеттік қызметін көрсету бойынша жұмыстар.
+                        </p>
+                    </div>
+                </div><!-- End Team Member -->
+
+                <div class="col-lg-4 col-md-6 member aos-init aos-animate" data-aos="fade-up" data-aos-delay="100">
+                    <div class="member-img">
+                        <img src="{% static 'app/img/structure/s_5.png' %}" class="img-fluid"
+                             alt="Кунакбаева Рашила Жанназаровна">
+                        <div class="social text-white flex-column">
+                            <span><i class="bi bi-envelope me-1"></i>r.kunakbaeva@n-k.kz</span><br>
+                            <span><i class="bi bi-phone me-1"></i>+7 (7172) 57-20-94 </span>
+                        </div>
+                    </div>
+                    <div class="member-info text-center">
+                        <h4>Кунакбаева Рашила Жанназаровна</h4>
+                        <span>Қаржы-экономикалық офисі басшысы</span>
+                        <p>
+                            Орталықтың есеп саясатын қалыптастырады, бухгалтерлік есеп шоттарының жұмыс жоспарын
+                            дайындауды басқарады, алғашқы құжаттар мен есептілікті қалыптастырады.
+                    </div>
+                </div><!-- End Team Member -->
+
+                <div class="col-lg-4 col-md-6 member aos-init aos-animate" data-aos="fade-up" data-aos-delay="100">
+                    <div class="member-img">
+                        <img src="{% static 'app/img/structure/s_6.png' %}" class="img-fluid"
+                             alt="Асамбаева Гүлнар Қайырдықызы">
+                        <div class="social text-white flex-column">
+                            <span><i class="bi bi-envelope me-1"></i>g.asambaeva@n-k.kz</span><br>
+                            <span><i class="bi bi-phone me-1"></i>+7 (7172) 57-20-85</span>
+                        </div>
+                    </div>
+                    <div class="member-info text-center">
+                        <h4>Асамбаева Гүлнар Қайырдықызы</h4>
+                        <span>Персоналды басқару және техникалық сүйемелдеу офисі басшысы</span>
+                        <p>
+                            Орталықтың қызметін әкімшілік және құжаттамалық қамтамасыз ету, техникалық сүйемелдеу,
+                            кадрларды басқару және адам ресурстарын дамыту.
+                        </p>
+                    </div>
+                </div><!-- End Team Member -->
+
+                <div class="col-lg-4 col-md-6 member aos-init aos-animate" data-aos="fade-up" data-aos-delay="100">
+                    <div class="member-img">
+                        <img src="{% static 'app/img/structure/s_7.png' %}" class="img-fluid"
+                             alt="Өтепқалиева Бибігүл Тоқайқызы">
+                        <div class="social text-white flex-column">
+                            <span><i class="bi bi-envelope me-1"></i>b.utepkaliyeva@n-k.kz</span><br>
+                            <span><i class="bi bi-phone me-1"></i>+7 (7172) 57-20-57</span><br>
+                        </div>
+                    </div>
+                    <div class="member-info text-center">
+                        <h4>Өтепқалиева Бибігүл Тоқайқызы</h4>
+                        <span>Құқықтық қамтамасыз ету және мемлекеттік сатып алу офисі басшысы</span>
+                        <p></p>
+                    </div>
+                </div><!-- End Team Member -->
+
+                <div class="col-lg-4 col-md-6 member aos-init aos-animate" data-aos="fade-up" data-aos-delay="100">
+                    <div class="member-img">
+                        <img src="{% static 'app/img/structure/s_8.png' %}" class="img-fluid"
+                             alt="Тұрсынғожаев Қайсар Болатбайұлы">
+                        <div class="social text-white flex-column">
+                            <span><i class="bi bi-envelope me-1"></i>k.tursyngozhayev@n-k.kz</span><br>
+                        </div>
+                    </div>
+                    <div class="member-info text-center">
+                        <h4>Тұрсынғожаев Қайсар Болатбайұлы</h4>
+                        <span>Ақпараттық-талдау офисінің жетекшісі</span>
+                        <p>
+                            Орталықтың қызметін ақпараттық-талдау бойынша қамтамасыз ету.
+                    </div>
+                </div><!-- End Team Member -->
+
+                <div class="col-lg-4 col-md-6 member aos-init aos-animate" data-aos="fade-up" data-aos-delay="100">
+                    <div class="member-img">
+                        <img src="{% static 'app/img/structure/s_9.png' %}" class="img-fluid"
+                             alt="Сәкенов Олжас Берлесұлы">
+                        <div class="social text-white flex-column">
+                            <span><i class="bi bi-envelope me-1"></i>o.sakenov@n-k.kz</span><br>
+                        </div>
+                    </div>
+                    <div class="member-info text-center">
+                        <h4>Сәкенов Олжас Берлесұлы</h4>
+                        <span>«Мамандығым-болашағым» кеңсесінің басшысы</span>
+                        <p>
+                            Кәсіби диагностика, форсайт мектептерін жүргізу, жаңа кәсіптердің өңірлік атластарын
+                            әзірлеу, білім беру бағдарламаларын әзірлеуге жәрдемдесу.
+                        </p>
+                    </div>
+                </div><!-- End Team Member -->
+
+                <div class="col-lg-4 col-md-6 member aos-init aos-animate" data-aos="fade-up" data-aos-delay="100">
+                    <div class="member-img">
+                        <img src="{% static 'app/img/structure/s_10.png' %}" class="img-fluid"
+                             alt="Есенов Дастан Нұрланұлы">
+                        <div class="social text-white flex-column">
+                            <span><i class="bi bi-envelope me-1"></i>d.yessenov@n-k.kz</span><br>
+                            <span><i class="bi bi-phone me-1"></i>+7 (7172) 57-20-57</span><br>
+                        </div>
+                    </div>
+                    <div class="member-info text-center">
+                        <h4>Есенов Дастан Нұрланұлы</h4>
+                        <span>Құқықтық қамтамасыз ету және мемлекеттік сатып алу офисі басшысы</span>
+                        <p>
+                            1) Орталық қызметін заңдық сүйемелдеуді жүзеге асыру;<br>
+                            2) Орталықтың мемлекеттік сатып алу рәсімдерін жүзеге асыру.</p>
+                    </div>
+                </div><!-- End Team Member -->
+
+
+            </div>
+
+        </div>
+
+    </section>
+{% endblock %}

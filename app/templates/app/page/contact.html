@@ -1,0 +1,117 @@
+{% extends 'base.html' %}
+{% load static %}
+
+{% block title %}
+    Байланыс
+{% endblock %}
+
+{% block content %}
+    <div class="page-title aos-init aos-animate" data-aos="fade">
+        <div class="heading">
+            <div class="container">
+                <div class="row d-flex justify-content-center text-center">
+                    <div class="col-lg-8">
+                        <h1>Байланыс<br></h1>
+                        <p class="mb-0">
+                            ЖОҒАРЫ БІЛІМ БЕРУДІ ДАМЫТУ ҰЛТТЫҚ ОРТАЛЫҒЫ
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <nav class="breadcrumbs">
+            <div class="container">
+                <ol>
+                    <li><a href="{% url 'app:home' %}">Басты</a></li>
+                    <li class="current">Байланыс<br></li>
+                </ol>
+            </div>
+        </nav>
+    </div>
+
+    <section id="contact" class="contact section">
+
+        <div class="mb-5 aos-init aos-animate" data-aos="fade-up" data-aos-delay="200">
+
+            <div class="map-container" style="width:100%; height: 300px">
+                <iframe src="https://yandex.ru/map-widget/v1/?lang=ru_RU&amp;scroll=true&amp;source=constructor-api&amp;um=constructor%3A93357cb578030166e7f5c88bb4411938314c8eb1c2c919b8fb969633829a9e56"
+                        frameborder="0" allowfullscreen="true" width="100%" height="100%"
+                        style="display: block;"></iframe>
+            </div>
+        </div><!-- End Google Maps -->
+
+        <div class="container aos-init aos-animate" data-aos="fade-up" data-aos-delay="100">
+
+            <div class="row gy-4">
+
+                <div class="col-lg-4">
+                    <div class="info-item d-flex aos-init aos-animate" data-aos="fade-up" data-aos-delay="300">
+                        <i class="bi bi-geo-alt flex-shrink-0"></i>
+                        <div>
+                            <h3>Мекен-жай</h3>
+                            <p>Қазақстан Республикасы, Астана қ., Сығанақ көшесі, 70, № 202 кеңсе</p>
+                        </div>
+                    </div><!-- End Info Item -->
+
+                    <div class="info-item d-flex aos-init aos-animate" data-aos="fade-up" data-aos-delay="400">
+                        <i class="bi bi-telephone flex-shrink-0"></i>
+                        <div>
+                            <h3>Телефон</h3>
+                            <p>+7 (7172) 57-20-75</p>
+                        </div>
+                    </div><!-- End Info Item -->
+
+                    <div class="info-item d-flex aos-init aos-animate" data-aos="fade-up" data-aos-delay="500">
+                        <i class="bi bi-envelope flex-shrink-0"></i>
+                        <div>
+                            <h3>E-mail</h3>
+                            <p>cbpiam@n-k.kz</p>
+                        </div>
+                    </div><!-- End Info Item -->
+
+                </div>
+
+                <div class="col-lg-8">
+                    <form action="#" method="post" class="php-email-form aos-init aos-animate"
+                          data-aos="fade-up" data-aos-delay="200">
+                        {% csrf_token %}
+                        <div class="row gy-4">
+
+                            <div class="col-md-6">
+                                <input type="text" name="name" class="form-control" placeholder="Аты" required="">
+                            </div>
+
+                            <div class="col-md-6 ">
+                                <input type="email" class="form-control" name="email" placeholder="Email"
+                                       required="">
+                            </div>
+
+                            <div class="col-md-12">
+                                <input type="text" class="form-control" name="subject" placeholder="Такырып"
+                                       required="">
+                            </div>
+
+                            <div class="col-md-12">
+                                <textarea class="form-control" name="message" rows="6" placeholder="Хабарлама"
+                                          required=""></textarea>
+                            </div>
+
+                            <div class="col-md-12 text-center">
+                                <div class="loading">Кутиниз</div>
+                                <div class="error-message"></div>
+                                <div class="sent-message">Хабарлама жиберилди</div>
+
+                                <button type="submit">Жиберу</button>
+                            </div>
+
+                        </div>
+                    </form>
+                </div><!-- End Contact Form -->
+
+            </div>
+
+        </div>
+
+    </section>
+
+{% endblock %}

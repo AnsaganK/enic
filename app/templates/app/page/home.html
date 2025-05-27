@@ -1,0 +1,331 @@
+{% extends 'base.html' %}
+{% load static %}
+
+{% block title %}
+    Басты
+{% endblock %}
+
+{% block content %}
+    <main class="main"  >
+
+        <!-- Hero Section -->
+        <section id="hero" class="hero section dark-background">
+
+            <img src="{% static 'app/img/bg.jpg' %}" alt="" data-aos="fade-in">
+
+            <div class="container">
+                <h2 data-aos="fade-up" data-aos-delay="100">Білімге жол<br> болашаққа бастар бағыт</h2>
+                <p data-aos="fade-up" data-aos-delay="200">Жоғары білімді дамытудың заманауи платформасы</p>
+                <div class="d-flex mt-4" data-aos="fade-up" data-aos-delay="300">
+                    <a href="courses.html" class="btn-get-started">Отиним жиберу</a>
+                </div>
+            </div>
+
+        </section><!-- /Hero Section -->
+
+        <!-- About Section -->
+        <section id="about" class="about section">
+
+            <div class="container">
+
+                <div class="row gy-4">
+
+                    <div class="col-lg-6 order-1 order-lg-2" data-aos="fade-up" data-aos-delay="100">
+                        <img src="{% static 'app/img/students.webp' %}" class="img-fluid rounded" alt="">
+                    </div>
+
+                    <div class="col-lg-6 order-2 order-lg-1 content" data-aos="fade-up" data-aos-delay="200">
+                        <h3>Жоғары білім туралы өзекті ақпарат бір жерде</h3>
+                        <p class="fst-italic">
+                            ENIC.KZ — құжаттарды тану, аккредитация және Болон үдерісі бойынша ресми портал.
+                        </p>
+                        <ul>
+                            <li><i class="bi bi-check-circle"></i> <span>ЖОО аккредитациясын тексеру.</span>
+                            </li>
+                            <li><i class="bi bi-check-circle"></i> <span>Дипломды тануға онлайн өтінім беру</span>
+                            </li>
+                            <li><i class="bi bi-check-circle"></i> <span>Болон үдерісімен танысу</span>
+                            </li>
+                        </ul>
+                        <a href="#" class="read-more"><span>Тагы</span><i class="bi bi-arrow-right"></i></a>
+                    </div>
+
+                </div>
+
+            </div>
+
+        </section><!-- /About Section -->
+
+        <!-- Counts Section -->
+        <section id="counts" class="section counts light-background">
+
+            <div class="container" data-aos="fade-up" data-aos-delay="100">
+
+                <div class="row gy-4">
+
+                    <div class="col-lg-3 col-md-6">
+                        <div class="stats-item text-center w-100 h-100">
+                        <span data-purecounter-start="0" data-purecounter-end="117" data-purecounter-duration="1"
+                              class="purecounter"></span>
+                            <p>ЖОО</p>
+                        </div>
+                    </div><!-- End Stats Item -->
+
+                    <div class="col-lg-3 col-md-6">
+                        <div class="stats-item text-center w-100 h-100">
+                        <span data-purecounter-start="0" data-purecounter-end="622157" data-purecounter-duration="1"
+                              class="purecounter"></span>
+                            <p>Студент</p>
+                        </div>
+                    </div><!-- End Stats Item -->
+
+                    <div class="col-lg-3 col-md-6">
+                        <div class="stats-item text-center w-100 h-100">
+                        <span data-purecounter-start="0" data-purecounter-end="159800" data-purecounter-duration="1"
+                              class="purecounter"></span>
+                            <p>Студент косылды</p>
+                        </div>
+                    </div><!-- End Stats Item -->
+
+                    <div class="col-lg-3 col-md-6">
+                        <div class="stats-item text-center w-100 h-100">
+                            <div class="d-flex justify-content-center flex-row">
+                        <span data-purecounter-start="0" data-purecounter-end="97" data-purecounter-duration="1"
+                              class="purecounter"></span>
+
+                                <span>
+                            %
+                        </span>
+                            </div>
+                            <p>Кундизги формат</p>
+                        </div>
+                    </div><!-- End Stats Item -->
+
+                </div>
+
+            </div>
+
+        </section><!-- /Counts Section -->
+
+        <!-- Features Section -->
+        <section id="features" class="features section mt-5">
+
+            <div class="container">
+
+                <div class="row gy-4">
+
+                    <div class="col-lg-3 col-md-4" data-aos="fade-up" data-aos-delay="100">
+                        <div class="features-item">
+                            <i class="bi bi-building" style="color: #ffbb2c;"></i>
+                            <h3><a href="" class="stretched-link">ЖОО тізімі</a></h3>
+                        </div>
+                    </div><!-- End Feature Item -->
+
+                    <div class="col-lg-3 col-md-4" data-aos="fade-up" data-aos-delay="200">
+                        <div class="features-item">
+                            <i class="bi bi-infinity" style="color: #ffbb2c;"></i>
+                            <h3><a href="" class="stretched-link">Болон процесі</a></h3>
+                        </div>
+                    </div><!-- End Feature Item -->
+
+                    <div class="col-lg-3 col-md-4" data-aos="fade-up" data-aos-delay="300">
+                        <div class="features-item">
+                            <i class="bi bi-patch-check" style="color: #e80368;"></i>
+                            <h3><a href="" class="stretched-link">Аккредитация</a></h3>
+                        </div>
+                    </div><!-- End Feature Item -->
+
+                    <div class="col-lg-3 col-md-4" data-aos="fade-up" data-aos-delay="400">
+                        <div class="features-item">
+                            <i class="bi bi-file-earmark-text" style="color: #e361ff;"></i>
+                            <h3><a href="" class="stretched-link">Дипломды тану</a></h3>
+                        </div>
+                    </div><!-- End Feature Item -->
+
+                    <div class="col-lg-3 col-md-4" data-aos="fade-up" data-aos-delay="500">
+                        <div class="features-item">
+                            <i class="bi bi-question-circle" style="color: #47aeff;"></i>
+                            <h3><a href="" class="stretched-link">Сұрақ-жауап</a></h3>
+                        </div>
+                    </div><!-- End Feature Item -->
+
+                    <div class="col-lg-3 col-md-4" data-aos="fade-up" data-aos-delay="600">
+                        <div class="features-item">
+                            <i class="bi bi-calculator" style="color: #ffa76e;"></i>
+                            <h3><a href="" class="stretched-link">Калькулятор</a></h3>
+                        </div>
+                    </div><!-- End Feature Item -->
+
+                    <div class="col-lg-3 col-md-4" data-aos="fade-up" data-aos-delay="700">
+                        <div class="features-item">
+                            <i class="bi bi-envelope" style="color: #11dbcf;"></i>
+                            <h3><a href="" class="stretched-link">Байланыс</a></h3>
+                        </div>
+                    </div><!-- End Feature Item -->
+
+                    <div class="col-lg-3 col-md-4" data-aos="fade-up" data-aos-delay="800">
+                        <div class="features-item">
+                            <i class="bi bi-person-lines-fill" style="color: #4233ff;"></i>
+                            <h3><a href="" class="stretched-link">Сарапшылар</a></h3>
+                        </div>
+                    </div><!-- End Feature Item -->
+
+                    <div class="col-lg-3 col-md-4" data-aos="fade-up" data-aos-delay="900">
+                        <div class="features-item">
+                            <i class="bi bi-gear" style="color: #b2904f;"></i>
+                            <h3><a href="" class="stretched-link">Қызметтер</a></h3>
+                        </div>
+                    </div><!-- End Feature Item -->
+
+                    <div class="col-lg-3 col-md-4" data-aos="fade-up" data-aos-delay="1000">
+                        <div class="features-item">
+                            <i class="bi bi-clock-history" style="color: #b20969;"></i>
+                            <h3><a href="" class="stretched-link">Өтініш күйін тексеру</a></h3>
+                        </div>
+                    </div><!-- End Feature Item -->
+
+                    <div class="col-lg-3 col-md-4" data-aos="fade-up" data-aos-delay="1100">
+                        <div class="features-item">
+                            <i class="bi bi-book" style="color: #ff5828;"></i>
+                            <h3><a href="" class="stretched-link">Оқу бағдарламалары</a></h3>
+                        </div>
+                    </div><!-- End Feature Item -->
+
+                    <div class="col-lg-3 col-md-4" data-aos="fade-up" data-aos-delay="1200">
+                        <div class="features-item">
+                            <i class="bi bi-pen" style="color: #29cc61;"></i>
+                            <h3><a href="" class="stretched-link">Пікір қалдыру</a></h3>
+                        </div>
+                    </div><!-- End Feature Item -->
+
+                </div>
+
+            </div>
+
+        </section><!-- /Features Section -->
+
+        <!-- Courses Section -->
+        <section id="courses" class="courses section">
+
+            <!-- Section Title -->
+            <div class="container section-title" data-aos="fade-up">
+                <h2>Жаналыктар</h2>
+                <p>Сонгы жаналыктар</p>
+            </div><!-- End Section Title -->
+
+            <div class="container">
+
+                <div class="row">
+
+                    <div class="col-lg-4 col-md-6 d-flex align-items-stretch" data-aos="zoom-in" data-aos-delay="100">
+                        <div class="course-item">
+                            <img src="{% static 'app/img/course-1.jpg' %}" class="img-fluid" alt="...">
+                            <div class="course-content">
+                                <h3><a href="course-details.html">Website Design</a></h3>
+                                <p class="description">Et architecto provident deleniti facere repellat nobis iste. Id
+                                    facere quia quae dolores dolorem tempore.</p>
+                            </div>
+                        </div>
+                    </div> <!-- End Course Item-->
+
+                </div>
+
+            </div>
+
+        </section><!-- /Courses Section -->
+
+        <!-- Trainers Index Section -->
+        <section id="trainers-index" class="section trainers-index">
+
+            <div class="container">
+                <h3>Басшылық құрам</h3>
+                <hr>
+                <div class="row justify-content-center align-items-center">
+
+                    <div class="col-lg-4 col-md-6 d-flex" data-aos="fade-up" data-aos-delay="100">
+                        <div class="member">
+                            <img src="{% static 'app/img/management/1.png' %}" class="img-fluid" alt=""
+                                 style="height: 400px; width: 100%;">
+                            <div class="member-content">
+                                <h4>КУАНГАНОВ ФАРХАД ШАЙМУРАТҰЛЫ</h4>
+                                <span>ДИРЕКТОР</span>
+                                <div class="social">
+                                    <a href="#">Почта: f.kuanganov@n-k.kz</a>
+                                </div>
+                            </div>
+                        </div>
+                    </div><!-- End Team Member -->
+
+                    <div class="col-lg-4 col-md-6 d-flex" data-aos="fade-up" data-aos-delay="200">
+                        <div class="member">
+                            <img src="{% static 'app/img/management/2.png' %}" class="img-fluid" alt=""
+                                 style="height: 400px; width: 100%;">
+                            <div class="member-content">
+                                <h4>ЕРЖАН ТҰРСЫНХАНҰЛЫ ІРГЕБАЕВ</h4>
+                                <span>ДИРЕКТОР ОРЫНБАСАРЫ</span>
+
+                                <div class="social">
+                                    <a href="#">
+                                        Почта: y.irgebayev@n-k.kz
+                                    </a>
+                                </div>
+                            </div>
+                        </div>
+                    </div><!-- End Team Member -->
+
+                    <div class="col-lg-4 col-md-6 d-flex" data-aos="fade-up" data-aos-delay="300">
+                        <div class="member">
+                            <img src="{% static 'app/img/management/3.png' %}" class="img-fluid" alt=""
+                                 style="height: 400px; width: 100%;">
+                            <div class="member-content">
+                                <h4>ӘЛІБЕК СЕРҒАЗЫҰЛЫ МӘДІБЕКОВ</h4>
+                                <span>ДИРЕКТОР ОРЫНБАСАРЫ</span>
+                                <div class="social">
+                                    <a href="#">
+                                        Почта: a.madibekov@n-k.kz
+                                    </a>
+                                </div>
+                            </div>
+                        </div>
+                    </div><!-- End Team Member -->
+
+                    <div class="col-lg-4 col-md-6 d-flex" data-aos="fade-up" data-aos-delay="300">
+                        <div class="member">
+                            <img src="{% static 'app/img/management/4.png' %}" class="img-fluid" alt=""
+                                 style="height: 400px;width: 100%;">
+                            <div class="member-content">
+                                <h4>НҰРЛАНОВ ШЫНҒЫС <br> НҰРЛАНҰЛЫ</h4>
+                                <span>ДИРЕКТОР ОРЫНБАСАРЫ</span>
+                                <div class="social">
+                                    <a href="#">
+                                        Почта: sh.nurlanov@n-k.kz
+                                    </a>
+                                </div>
+                            </div>
+                        </div>
+                    </div><!-- End Team Member -->
+
+                    <div class="col-lg-4 col-md-6 d-flex" data-aos="fade-up" data-aos-delay="300">
+                        <div class="member">
+                            <img src="{% static 'app/img/management/5.png' %}" class="img-fluid" alt=""
+                                 style="height: 400px;width: 100%;">
+                            <div class="member-content">
+                                <h4>АМАНТАЙ ӘБІЛҚАЙЫРҰЛЫ <br> НҰРМАҒАМБЕТОВ</h4>
+                                <span>ДИРЕКТОР КЕҢЕСШІСІ</span>
+                                <div class="social">
+                                    <a href="#">
+                                        Почта: a.nurmagambetov@n-k.kz
+                                    </a>
+                                </div>
+                            </div>
+                        </div>
+                    </div><!-- End Team Member -->
+
+                </div>
+
+            </div>
+
+        </section><!-- /Trainers Index Section -->
+
+    </main>
+{% endblock %}

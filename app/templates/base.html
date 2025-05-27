@@ -1,0 +1,225 @@
+{% load static %}
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <meta content="width=device-width, initial-scale=1.0" name="viewport">
+    <title>{% block title %}{% endblock %} | ENIC</title>
+    <meta name="description" content="">
+    <meta name="keywords" content="">
+
+    <!-- Favicons -->
+    <link href="{% static 'app/img/enic_not_bg.png' %}" rel="icon">
+    <link href="{% static 'app/img/enic_not_bg.png' %}" rel="apple-touch-icon">
+
+    <!-- Fonts -->
+    <link href="https://fonts.googleapis.com" rel="preconnect">
+    <link href="https://fonts.gstatic.com" rel="preconnect" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300;0,400;0,500;0,600;0,700;0,800;1,300;1,400;1,500;1,600;1,700;1,800&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Raleway:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap"
+          rel="stylesheet">
+
+    <!-- Vendor CSS Files -->
+    <link href="{% static 'app/vendor/bootstrap/css/bootstrap.min.css' %}" rel="stylesheet">
+    <link href="{% static 'app/vendor/bootstrap-icons/bootstrap-icons.css' %}" rel="stylesheet">
+    <link href="{% static 'app/vendor/aos/aos.css' %}" rel="stylesheet">
+    <link href="{% static 'app/vendor/glightbox/css/glightbox.min.css' %}" rel="stylesheet">
+    <link href="{% static 'app/vendor/swiper/swiper-bundle.min.css' %}" rel="stylesheet">
+
+    <!-- Main CSS File -->
+    <link href="{% static 'app/css/main.css' %}" rel="stylesheet">
+
+    <style>
+        .btn-login {
+            color: var(--contrast-color) !important;
+            background: var(--accent-color) !important;
+            font-size: 18px !important;
+            padding: 8px 20px !important;
+            margin: 0 0 0 30px !important;
+            border-radius: 5px !important;
+            transition: 0.3s !important;
+        }
+
+        .btn-login i {
+            font-size: 18px !important;
+        }
+    </style>
+</head>
+
+<body class="index-page">
+
+<header id="header" class="header d-flex align-items-center sticky-top">
+    <div class="container-fluid container-xl position-relative d-flex align-items-center">
+
+        <a href="{% url 'app:home' %}" class="logo d-flex align-items-center me-auto">
+            <!-- Uncomment the line below if you also wish to use an image logo -->
+            <!-- <img src="assets/img/logo.png" alt=""> -->
+            <img src="{% static 'app/img/enic_not_bg.png' %}" alt="">
+            <h1 class="sitename">ENIC</h1>
+        </a>
+
+        <nav id="navmenu" class="navmenu">
+            <ul>
+                <li><a href="{% url 'app:home' %}" {% if request.path == '/' %}class="active"{% endif %}>Басты<br></a>
+                </li>
+                <li class="dropdown">
+                    <a href="{% url 'app:about' %}" {% if '/about' in request.path %}class="active"{% endif %}>
+                        <span>Орталық туралы</span> <i class="bi bi-chevron-down toggle-dropdown"></i>
+                    </a>
+                    <ul>
+                        <li><a href="{% url 'app:about_strategy' %}">Стратегиясы және міндеті</a></li>
+                        <li><a href="{% url 'app:about_structure' %}">Құрылымы</a></li>
+                        <li><a href="{% url 'app:about_memorandum' %}">Орталықтың Меморандумдары</a></li>
+                        <li><a href="{% url 'app:about_social_life' %}">Қоғамдық өмір</a></li>
+                    </ul>
+                </li>
+                <li><a href="{% url 'app:article_list' %}" {% if '/article' in request.path %}class="active"{% endif %}>Жаналыктыр</a>
+                </li>
+                <li><a href="{% url 'app:contact' %}" {% if '/contact' in request.path %}class="active"{% endif %}>Байланыс</a>
+                </li>
+                <li><a href="events.html">Сұрақ-жауап</a></li>
+                <li class="dropdown">
+                    <a href="#"><span>ЖОО</span> <i
+                            class="bi bi-chevron-down toggle-dropdown"></i></a>
+                    <ul>
+                        <li><a href="#"></a></li>
+                        <li class="dropdown"><a href="#"><span>Deep Dropdown</span> <i
+                                class="bi bi-chevron-down toggle-dropdown"></i></a>
+                            <ul>
+                                <li><a href="#">Deep Dropdown 1</a></li>
+                                <li><a href="#">Deep Dropdown 2</a></li>
+                                <li><a href="#">Deep Dropdown 3</a></li>
+                                <li><a href="#">Deep Dropdown 4</a></li>
+                                <li><a href="#">Deep Dropdown 5</a></li>
+                            </ul>
+                        </li>
+                        <li><a href="#">Dropdown 2</a></li>
+                        <li><a href="#">Dropdown 3</a></li>
+                        <li><a href="#">Dropdown 4</a></li>
+                    </ul>
+                </li>
+                <li>
+                    {% if request.user.is_authenticated %}
+                        <a href="{% url 'app:cabinet' %}" class="btn-login">
+                            <i class="bi bi-person-check me-3"></i>
+                            {{ request.user.get_full_name|default:'Кабинет' }}
+                        </a>
+                    {% else %}
+                        <a href="{% url 'login' %}" class="btn-login">
+                            <i class="bi bi-person me-3"></i>
+                            Кабинет
+                        </a>
+                    {% endif %}
+                </li>
+            </ul>
+            <i class="mobile-nav-toggle d-xl-none bi bi-list"></i>
+        </nav>
+
+        {#        <a class="btn-getstarted" href="courses.html">Get Started</a>#}
+
+    </div>
+</header>
+
+{% if messages %}
+    <div class="container mt-3">
+        <div class="messages"  style="position: absolute;
+    z-index: 100;
+    max-width: 450px;
+    width: 100%;">
+            {% for message in messages %}
+                <div class="alert alert-{{ message.tags }} alert-dismissible fade show opacity-75" role="alert">
+                    {{ message }}
+                    <button type="button" class="btn-close" data-bs-dismiss="alert" aria-label="Close"></button>
+                </div>
+            {% endfor %}
+        </div>
+    </div>
+{% endif %}
+{% block content %}
+
+{% endblock %}
+<footer id="footer" class="footer position-relative light-background">
+
+    <div class="container footer-top">
+        <div class="row gy-4">
+            <div class="col-lg-4 col-md-6 footer-about">
+                <a href="index.html" class="d-flex align-items-center">
+                    <img src="{% static 'app/img/enic.png' %}" alt="" height="120">
+                </a>
+                <div class="footer-contact pt-3">
+                    <p>Қазақстан Республикасы, Астана қ.,</p>
+                    <p>Сығанақ көшесі, 70, № 202 кеңсе,</p>
+                    <p class="mt-3">пошта индексі: Z05K7B0</p>
+                    <p><strong>Телефон:</strong> <span>+7 (7172) 57-20-75</span></p>
+                    <p><strong>E-mail:</strong> <span>cbpiam@n-k.kz</span></p>
+                </div>
+                <div class="social-links d-flex mt-4">
+                    <a href="http://facebook.com/edugovrk" target="_blank"><i class="bi bi-facebook"></i></a>
+                    <a href="http://instagram.com/edugovkz" target="_blank"><i class="bi bi-instagram"></i></a>
+                    <a href="http://youtube.com/channel/UCj50gtGjP2EEsM_EJIqu7cA" target="_blank"><i
+                            class="bi bi-youtube"></i></a>
+                </div>
+            </div>
+
+            <div class="col-lg-2 col-md-3 footer-links">
+                <h4>Пайдалы силтимелер</h4>
+                <ul>
+                    <li><a href="#">Закупки</a></li>
+                    <li><a href="#">Вакансии</a></li>
+                    <li><a href="#">Политика конфидициальности</a></li>
+                </ul>
+            </div>
+
+            <div class="col-lg-2 col-md-3 footer-links">
+                <h4>Центр туралы</h4>
+                <ul>
+                    <li><a href="#">Структура</a></li>
+                    <li><a href="#">Руководство</a></li>
+                    <li><a href="#">Команда</a></li>
+                </ul>
+            </div>
+
+            <div class="col-lg-4 col-md-12 footer-newsletter">
+                <div class="map-container" style="width:100%; height: 100%">
+                    <iframe src="https://yandex.ru/map-widget/v1/?lang=ru_RU&amp;scroll=true&amp;source=constructor-api&amp;um=constructor%3A93357cb578030166e7f5c88bb4411938314c8eb1c2c919b8fb969633829a9e56"
+                            frameborder="0" allowfullscreen="true" width="100%" height="100%"
+                            style="display: block;"></iframe>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="container copyright text-center mt-4">
+        <p>© <span>Copyright</span> <strong class="px-1 sitename">ENIC</strong> <span>All Rights Reserved</span></p>
+        <div class="credits">
+            <!-- All the links in the footer should remain intact. -->
+            <!-- You can delete the links only if you've purchased the pro version. -->
+            <!-- Licensing information: https://bootstrapmade.com/license/ -->
+            <!-- Purchase the pro version with working PHP/AJAX contact form: [buy-url] -->
+            Developed by <a href="#">AnsaganK</a>
+        </div>
+    </div>
+
+</footer>
+
+<!-- Scroll Top -->
+<a href="#" id="scroll-top" class="scroll-top d-flex align-items-center justify-content-center"><i
+        class="bi bi-arrow-up-short"></i></a>
+
+<!-- Preloader -->
+<div id="preloader"></div>
+
+<!-- Vendor JS Files -->
+<script src="{% static 'app/vendor/bootstrap/js/bootstrap.bundle.min.js' %}"></script>
+<script src="{% static 'app/vendor/php-email-form/validate.js' %}"></script>
+<script src="{% static 'app/vendor/aos/aos.js' %}"></script>
+<script src="{% static 'app/vendor/glightbox/js/glightbox.min.js' %}"></script>
+<script src="{% static 'app/vendor/purecounter/purecounter_vanilla.js' %}"></script>
+<script src="{% static 'app/vendor/swiper/swiper-bundle.min.js' %}"></script>
+
+<!-- Main JS File -->
+<script src="{% static 'app/js/main.js' %}"></script>
+
+</body>
+
+</html>

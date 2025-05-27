@@ -1,0 +1,54 @@
+# Python
+__pycache__/
+*.py[cod]
+*.pyo
+*.pyd
+*.so
+
+# Virtual Environment
+venv/
+.env/
+.venv/
+
+# Django Stuff
+#*.sqlite3
+#*.log
+#db.sqlite3
+#media/
+#staticfiles/
+#local_settings.py
+
+# IDEs
+.vscode/
+.idea/
+*.swp
+
+# Mac/Linux/Windows system files
+.DS_Store
+Thumbs.db
+
+# PyCharm
+*.iml
+*.ipr
+*.iws
+
+# Migrations (если не хочешь трекать)
+**/migrations/*.pyc
+**/migrations/__pycache__/
+# можно исключить только init
+# **/migrations/*.py
+# !**/migrations/__init__.py
+
+# Node/npm stuff (если используется)
+node_modules/
+npm-debug.log
+
+# Coverage
+htmlcov/
+.coverage
+.tox/
+.pytest_cache/
+.cache/
+
+# VSCode settings
+*.code-workspace
