@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2025-05-27 15:47+0500\n"
+"POT-Creation-Date: 2025-05-27 19:37+0500\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -26,7 +26,7 @@ msgstr ""
 #: app/templates/app/about/social_life.html:27
 #: app/templates/app/about/strategy.html:27
 #: app/templates/app/about/structure.html:27 app/templates/base.html:68
-#: app/templates/base.html:188
+#: app/templates/base.html:191
 msgid "Орталық туралы"
 msgstr "О центре"
 
@@ -35,8 +35,9 @@ msgstr "О центре"
 #: app/templates/app/about/social_life.html:17
 #: app/templates/app/about/strategy.html:17
 #: app/templates/app/about/structure.html:17
-#: app/templates/app/article/list.html:16 app/templates/app/page/FAQ.html:16
-#: app/templates/app/page/contact.html:17
+#: app/templates/app/article/list.html:16
+#: app/templates/app/contact/contact.html:17
+#: app/templates/app/contact/list.html:41 app/templates/app/page/FAQ.html:16
 #: app/templates/app/user/cabinet.html:16
 msgid "ЖОҒАРЫ БІЛІМ БЕРУДІ ДАМЫТУ ҰЛТТЫҚ ОРТАЛЫҒЫ"
 msgstr "НАЦИОНАЛЬНЫЙ ЦЕНТР РАЗВИТИЯ ВЫСШЕГО ОБРАЗОВАНИЯ"
@@ -46,8 +47,9 @@ msgstr "НАЦИОНАЛЬНЫЙ ЦЕНТР РАЗВИТИЯ ВЫСШЕГО ОБ
 #: app/templates/app/about/social_life.html:26
 #: app/templates/app/about/strategy.html:26
 #: app/templates/app/about/structure.html:26
-#: app/templates/app/article/list.html:25 app/templates/app/page/FAQ.html:25
-#: app/templates/app/page/contact.html:26
+#: app/templates/app/article/list.html:25
+#: app/templates/app/contact/contact.html:26
+#: app/templates/app/contact/list.html:50 app/templates/app/page/FAQ.html:25
 #: app/templates/app/user/cabinet.html:25 app/templates/base.html:64
 #: app/templates/registration/login.html:13
 #: app/templates/registration/registration.html:13
@@ -150,7 +152,7 @@ msgstr "Коллегиальность в управлении и приняти
 #: app/templates/app/about/strategy.html:15
 #: app/templates/app/about/strategy.html:28
 #: app/templates/app/about/strategy.html:37 app/templates/base.html:71
-#: app/templates/base.html:190
+#: app/templates/base.html:193
 msgid "Стратегиясы және міндеті"
 msgstr "Стратегия и миссия"
 
@@ -158,7 +160,7 @@ msgstr "Стратегия и миссия"
 #: app/templates/app/about/structure.html:6
 #: app/templates/app/about/structure.html:15
 #: app/templates/app/about/structure.html:28 app/templates/base.html:72
-#: app/templates/base.html:191
+#: app/templates/base.html:194
 msgid "Құрылымы"
 msgstr "Структура"
 
@@ -166,7 +168,7 @@ msgstr "Структура"
 #: app/templates/app/about/memorandum.html:6
 #: app/templates/app/about/memorandum.html:15
 #: app/templates/app/about/memorandum.html:28 app/templates/base.html:73
-#: app/templates/base.html:192
+#: app/templates/base.html:195
 msgid "Орталықтың Меморандумдары"
 msgstr "Меморандумы центра"
 
@@ -174,7 +176,7 @@ msgstr "Меморандумы центра"
 #: app/templates/app/about/social_life.html:6
 #: app/templates/app/about/social_life.html:15
 #: app/templates/app/about/social_life.html:28 app/templates/base.html:74
-#: app/templates/base.html:193
+#: app/templates/base.html:196
 msgid "Қоғамдық өмір"
 msgstr "Общественная жизнь"
 
@@ -291,9 +293,90 @@ msgstr ""
 msgid "Жаңалыктар"
 msgstr "Новости"
 
+#: app/templates/app/contact/contact.html:6
+#: app/templates/app/contact/contact.html:15
+#: app/templates/app/contact/contact.html:27
+#: app/templates/app/contact/list.html:51 app/templates/app/page/home.html:170
+#: app/templates/base.html:81
+msgid "Байланыс"
+msgstr "Контакты"
+
+#: app/templates/app/contact/contact.html:52
+msgid "Барлық өтінімдер"
+msgstr "Все заявки"
+
+#: app/templates/app/contact/contact.html:59
+msgid "Мекен-жай"
+msgstr "Адрес"
+
+#: app/templates/app/contact/contact.html:60
+msgid "Қазақстан Республикасы, Астана қ., Сығанақ көшесі, 70, № 202 кеңсе"
+msgstr "Республика Казахстан, г. Астана, ул. Сыганак, 70, офис № 202"
+
+#: app/templates/app/contact/contact.html:67
+msgid "Телефон"
+msgstr "Телефон"
+
+#: app/templates/app/contact/contact.html:89
+#: app/templates/app/contact/list.html:122
+#: app/templates/app/user/cabinet.html:44
+msgid "Аты"
+msgstr "Имя"
+
+#: app/templates/app/contact/contact.html:100
+#: app/templates/app/contact/list.html:65
+msgid "Тақырып"
+msgstr "Тема"
+
+#: app/templates/app/contact/contact.html:106
+msgid "Хабарлама"
+msgstr "Сообщение"
+
+#: app/templates/app/contact/contact.html:112
+msgid "Файл"
+msgstr "Файл"
+
+#: app/templates/app/contact/contact.html:117
+msgid "Күтіңіз"
+msgstr "Ждите"
+
+#: app/templates/app/contact/contact.html:119
+msgid "Хабарлама жіберілді"
+msgstr "Заявка отправлена"
+
+#: app/templates/app/contact/contact.html:121
+msgid "Жіберу"
+msgstr "Отправить"
+
+#: app/templates/app/contact/list.html:5 app/templates/app/contact/list.html:39
+#: app/templates/app/contact/list.html:52
+msgid "Өтінімдер"
+msgstr "Заявки"
+
+#: app/templates/app/contact/list.html:23
+msgid "Кері"
+msgstr "Отмена"
+
+#: app/templates/app/contact/list.html:27
+#: app/templates/app/contact/list.html:64
+msgid "Оқылды"
+msgstr "Прочитано"
+
+#: app/templates/app/contact/list.html:66
+msgid "Жіберу уақыты"
+msgstr "Дата отправления"
+
+#: app/templates/app/contact/list.html:90
+msgid "Оқу"
+msgstr "Прочитать"
+
+#: app/templates/app/contact/list.html:126
+msgid "Такырып"
+msgstr "Тема"
+
 #: app/templates/app/page/FAQ.html:5 app/templates/app/page/FAQ.html:14
 #: app/templates/app/page/FAQ.html:26 app/templates/app/page/home.html:156
-#: app/templates/base.html:83
+#: app/templates/base.html:84
 msgid "Сұрақ-жауап"
 msgstr "Вопрос-ответ"
 
@@ -305,7 +388,9 @@ msgstr "Как признается диплом?"
 msgid ""
 "Дипломды тану үшін ENIC-Kazakhstan сайтындағы өтінім формасын толтырып, "
 "қажетті құжаттарды жүктеу қажет."
-msgstr "Для признания вашего диплома вам необходимо заполнить заявку на сайте ENIC-Kazakhstan и загрузить необходимые документы."
+msgstr ""
+"Для признания вашего диплома вам необходимо заполнить заявку на сайте ENIC-"
+"Kazakhstan и загрузить необходимые документы."
 
 #: app/templates/app/page/FAQ.html:55
 msgid "Қандай құжаттар қажет?"
@@ -315,7 +400,9 @@ msgstr "Какие документы необходимы?"
 msgid ""
 "Жеке куәлік, диплом, қосымша (транскрипт), төлқұжаттың көшірмесі және қажет "
 "болған жағдайда аудармалар талап етіледі."
-msgstr "Требуются удостоверение личности, диплом, копия паспорта и переводы при необходимости."
+msgstr ""
+"Требуются удостоверение личности, диплом, копия паспорта и переводы при "
+"необходимости."
 
 #: app/templates/app/page/FAQ.html:69
 msgid "Аккредитация дегеніміз не?"
@@ -325,7 +412,9 @@ msgstr "Что такое аккредитация?"
 msgid ""
 "Аккредитация — бұл оқу ордасының білім беру қызметінің сапасын тәуелсіз "
 "бағалау рәсімі."
-msgstr "Аккредитация — процедура независимой оценки качества образовательных услуг, предоставляемых образовательным учреждением."
+msgstr ""
+"Аккредитация — процедура независимой оценки качества образовательных услуг, "
+"предоставляемых образовательным учреждением."
 
 #: app/templates/app/page/FAQ.html:83
 msgid "Болон үдерісі не береді?"
@@ -335,7 +424,10 @@ msgstr "Что дает Болонский процесс?"
 msgid ""
 "Болон үдерісі — Еуропалық жоғары білім кеңістігінде білім сапасын арттыру "
 "мен студенттердің мобильділігін қамтамасыз етуге бағытталған бастама."
-msgstr "Болонский процесс — это инициатива, направленная на повышение качества образования и обеспечение мобильности студентов в Европейском пространстве высшего образования."
+msgstr ""
+"Болонский процесс — это инициатива, направленная на повышение качества "
+"образования и обеспечение мобильности студентов в Европейском пространстве "
+"высшего образования."
 
 #: app/templates/app/page/FAQ.html:97
 msgid "Жауапты қайдан алуға болады?"
@@ -345,50 +437,9 @@ msgstr "Где я могу получить ответ?"
 msgid ""
 "Сіз бізге сайттағы байланыс формасы арқылы немесе көрсетілген байланыс "
 "нөмірлері арқылы хабарласа аласыз."
-msgstr "Вы можете связаться с нами через контактную форму на сайте или по указанным контактным номерам."
-
-#: app/templates/app/page/contact.html:6 app/templates/app/page/contact.html:15
-#: app/templates/app/page/contact.html:27 app/templates/app/page/home.html:170
-#: app/templates/base.html:81
-msgid "Байланыс"
-msgstr "Контакты"
-
-#: app/templates/app/page/contact.html:52
-msgid "Мекен-жай"
-msgstr "Адрес"
-
-#: app/templates/app/page/contact.html:53
-msgid "Қазақстан Республикасы, Астана қ., Сығанақ көшесі, 70, № 202 кеңсе"
-msgstr "Республика Казахстан, г. Астана, ул. Сыганак, 70, офис № 202"
-
-#: app/templates/app/page/contact.html:60
-msgid "Телефон"
-msgstr "Телефон"
-
-#: app/templates/app/page/contact.html:82
-#: app/templates/app/user/cabinet.html:44
-msgid "Аты"
-msgstr "Имя"
-
-#: app/templates/app/page/contact.html:91
-msgid "Тақырып"
-msgstr "Тема"
-
-#: app/templates/app/page/contact.html:96
-msgid "Хабарлама"
-msgstr "Сообщение"
-
-#: app/templates/app/page/contact.html:101
-msgid "Күтіңіз"
-msgstr "Ждите"
-
-#: app/templates/app/page/contact.html:103
-msgid "Хабарлама жіберілді"
-msgstr "Заявка отправлена"
-
-#: app/templates/app/page/contact.html:105
-msgid "Жіберу"
-msgstr "Отправить"
+msgstr ""
+"Вы можете связаться с нами через контактную форму на сайте или по указанным "
+"контактным номерам."
 
 #: app/templates/app/page/home.html:6
 msgid "Басты бет"
@@ -436,7 +487,7 @@ msgstr "Введение в Болонский процесс"
 msgid "Тағы"
 msgstr "Далее"
 
-#: app/templates/app/page/home.html:78 app/templates/base.html:85
+#: app/templates/app/page/home.html:78 app/templates/base.html:86
 msgid "ЖОО"
 msgstr "ВУЗ"
 
@@ -530,23 +581,23 @@ msgstr "Изменить"
 msgid "Шығу"
 msgstr "Выйти"
 
-#: app/templates/base.html:124
+#: app/templates/base.html:125
 msgid "Кабинет"
 msgstr "Кабинет"
 
-#: app/templates/base.html:179
+#: app/templates/base.html:182
 msgid "Пайдалы сілтемелер"
 msgstr "Полезные ссылки"
 
-#: app/templates/base.html:181
+#: app/templates/base.html:184
 msgid "Сатып алулар"
 msgstr "Закупки"
 
-#: app/templates/base.html:182
+#: app/templates/base.html:185
 msgid "Жұмыс орындары"
 msgstr "Вакансии"
 
-#: app/templates/base.html:183
+#: app/templates/base.html:186
 msgid "Құпиялылық саясаты"
 msgstr "Политика конфиденциальности"
 
