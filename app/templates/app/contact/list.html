@@ -89,6 +89,17 @@
                                 <i class="bi bi-eye me-2"></i>
                                 {% trans 'Оқу' %}
                             </a>
+                            {% if message.file %}
+                                <a href="{{ message.file.url }}" class="btn btn-success btn-sm" download>
+                                    <i class="bi bi-download ms-2 me-2"></i>
+                                    {% trans 'Жүктеу' %}
+                                </a>
+                            {% else %}
+                                <a href="#" class="btn btn-secondary btn-sm">
+                                    <i class="bi bi-download ms-2 me-2"></i>
+                                    {% trans 'Жүктеу' %}
+                                </a>
+                            {% endif %}
                         </td>
                     </tr>
                 {% endfor %}
@@ -119,14 +130,14 @@
                 <table class="table table-bordered table-sm text-center" cellspacing="10" cellpadding="10">
                     <tbody>
                         <tr>
-                            <td style="width: 50%">{% trans 'Аты' %}: ${json.name}</td>
-                            <td style="width: 50%">Email: ${json.email}</td>
+                            <td class="p-2" style="width: 50%"><b>{% trans 'Аты' %}</b>: ${json.name}</td>
+                            <td class="p-2" style="width: 50%"><b>Email</b>: ${json.email}</td>
                         </tr>
                         <tr>
-                            <td colspan="2">{% trans 'Такырып' %}<br> ${json.subject}</td>
+                            <td class="p-2" colspan="2"><b>{% trans 'Такырып' %}</b>: ${json.subject}</td>
                         </tr>
                         <tr>
-                            <td colspan="2">${json.message}</td>
+                            <td class="p-2" colspan="2">${json.message}</td>
                         </tr>
                     </tbody>
                 </table>

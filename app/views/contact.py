@@ -43,7 +43,7 @@ def contact_message_json_detail(request, pk):
         'subject': contact_message.subject,
         'email': contact_message.email,
         'message': contact_message.message,
-        'file': contact_message.file.path if contact_message.file else None,
+        'file': contact_message.file.url if contact_message.file else None,
     })
 
 

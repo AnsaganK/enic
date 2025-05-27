@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2025-05-27 19:37+0500\n"
+"POT-Creation-Date: 2025-05-27 20:00+0500\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -320,7 +320,7 @@ msgid "Телефон"
 msgstr "Telephone"
 
 #: app/templates/app/contact/contact.html:89
-#: app/templates/app/contact/list.html:122
+#: app/templates/app/contact/list.html:133
 #: app/templates/app/user/cabinet.html:44
 msgid "Аты"
 msgstr "Name"
@@ -372,7 +372,12 @@ msgstr "Send time"
 msgid "Оқу"
 msgstr "Read"
 
-#: app/templates/app/contact/list.html:126
+#: app/templates/app/contact/list.html:95
+#: app/templates/app/contact/list.html:100
+msgid "Жүктеу"
+msgstr "Download"
+
+#: app/templates/app/contact/list.html:137
 msgid "Такырып"
 msgstr "Subject"
 
