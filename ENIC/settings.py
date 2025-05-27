@@ -27,6 +27,7 @@ DEBUG = True
 ALLOWED_HOSTS = [
     '127.0.0.1',
     '185.244.218.177',
+    'enic.kz',
 ]
 
 # Application definition
