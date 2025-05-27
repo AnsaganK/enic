@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2025-05-27 20:00+0500\n"
+"POT-Creation-Date: 2025-05-27 21:00+0500\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -24,7 +24,7 @@ msgstr ""
 #: app/templates/app/about/social_life.html:27
 #: app/templates/app/about/strategy.html:27
 #: app/templates/app/about/structure.html:27 app/templates/base.html:68
-#: app/templates/base.html:191
+#: app/templates/base.html:193
 msgid "Орталық туралы"
 msgstr "About the center"
 
@@ -153,7 +153,7 @@ msgstr "Collegiality in management and decision-making"
 #: app/templates/app/about/strategy.html:15
 #: app/templates/app/about/strategy.html:28
 #: app/templates/app/about/strategy.html:37 app/templates/base.html:71
-#: app/templates/base.html:193
+#: app/templates/base.html:195
 msgid "Стратегиясы және міндеті"
 msgstr "Strategy and mission"
 
@@ -161,7 +161,7 @@ msgstr "Strategy and mission"
 #: app/templates/app/about/structure.html:6
 #: app/templates/app/about/structure.html:15
 #: app/templates/app/about/structure.html:28 app/templates/base.html:72
-#: app/templates/base.html:194
+#: app/templates/base.html:196
 msgid "Құрылымы"
 msgstr "Structure"
 
@@ -169,7 +169,7 @@ msgstr "Structure"
 #: app/templates/app/about/memorandum.html:6
 #: app/templates/app/about/memorandum.html:15
 #: app/templates/app/about/memorandum.html:28 app/templates/base.html:73
-#: app/templates/base.html:195
+#: app/templates/base.html:197
 msgid "Орталықтың Меморандумдары"
 msgstr "Memoranda of the Center"
 
@@ -177,7 +177,7 @@ msgstr "Memoranda of the Center"
 #: app/templates/app/about/social_life.html:6
 #: app/templates/app/about/social_life.html:15
 #: app/templates/app/about/social_life.html:28 app/templates/base.html:74
-#: app/templates/base.html:196
+#: app/templates/base.html:198
 msgid "Қоғамдық өмір"
 msgstr "Public life"
 
@@ -588,23 +588,23 @@ msgstr "Change"
 msgid "Шығу"
 msgstr "Logout"
 
-#: app/templates/base.html:125
+#: app/templates/base.html:127
 msgid "Кабинет"
 msgstr "Cabinet"
 
-#: app/templates/base.html:182
+#: app/templates/base.html:184
 msgid "Пайдалы сілтемелер"
 msgstr "Useful links"
 
-#: app/templates/base.html:184
+#: app/templates/base.html:186
 msgid "Сатып алулар"
 msgstr "Procurement"
 
-#: app/templates/base.html:185
+#: app/templates/base.html:187
 msgid "Жұмыс орындары"
 msgstr "Vacancies"
 
-#: app/templates/base.html:186
+#: app/templates/base.html:188
 msgid "Құпиялылық саясаты"
 msgstr "Privacy Policy"
 
