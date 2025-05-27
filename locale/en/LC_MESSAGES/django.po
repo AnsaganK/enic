@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2025-05-27 14:27+0500\n"
+"POT-Creation-Date: 2025-05-27 15:47+0500\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -33,7 +33,7 @@ msgstr "About the center"
 #: app/templates/app/about/social_life.html:17
 #: app/templates/app/about/strategy.html:17
 #: app/templates/app/about/structure.html:17
-#: app/templates/app/article/list.html:16
+#: app/templates/app/article/list.html:16 app/templates/app/page/FAQ.html:16
 #: app/templates/app/page/contact.html:17
 #: app/templates/app/user/cabinet.html:16
 msgid "ЖОҒАРЫ БІЛІМ БЕРУДІ ДАМЫТУ ҰЛТТЫҚ ОРТАЛЫҒЫ"
@@ -44,7 +44,7 @@ msgstr "NATIONAL CENTER FOR THE DEVELOPMENT OF HIGHER EDUCATION"
 #: app/templates/app/about/social_life.html:26
 #: app/templates/app/about/strategy.html:26
 #: app/templates/app/about/structure.html:26
-#: app/templates/app/article/list.html:25
+#: app/templates/app/article/list.html:25 app/templates/app/page/FAQ.html:25
 #: app/templates/app/page/contact.html:26
 #: app/templates/app/user/cabinet.html:25 app/templates/base.html:64
 #: app/templates/registration/login.html:13
@@ -124,7 +124,10 @@ msgid ""
 "                            арналған мемлекеттік бағдарламасын бекіту "
 "туралы» Жарлығы.\n"
 "                        "
-msgstr "Basis - Decree of the President of the Republic of Kazakhstan No. 1118 dated December 7, 2010 'On approval of the State Program for the Development of Education in the Republic of Kazakhstan for 2011-2020'."
+msgstr ""
+"Basis - Decree of the President of the Republic of Kazakhstan No. 1118 dated "
+"December 7, 2010 'On approval of the State Program for the Development of "
+"Education in the Republic of Kazakhstan for 2011-2020'."
 
 #: app/templates/app/about/about.html:75
 msgid "ҚЫЗМЕТІНІҢ НЕГІЗГІ ПРИНЦИПТЕРІ"
@@ -132,7 +135,8 @@ msgstr "BASIC PRINCIPLES OF OPERATION"
 
 #: app/templates/app/about/about.html:79
 msgid "Қазақстанның жоғары оқу орындарымен өзара әрекеттесу және ашықтық"
-msgstr "Interaction and openness with higher education institutions in Kazakhstan"
+msgstr ""
+"Interaction and openness with higher education institutions in Kazakhstan"
 
 #: app/templates/app/about/about.html:82
 msgid "Барлық мүдделі тараптардың ақпаратқа қол жетімділігі"
@@ -197,7 +201,15 @@ msgid ""
 "                        АҚ арасында ынтымақтастық және өзара іс-қимыл туралы "
 "Меморандумға қол қойды.\n"
 "                    "
-msgstr "Today, on May 2, 2023, the Director of the National Center for the Development of Higher Education A.A. Mukhatayev and the President of the Center for the Development of Labor Resources D.R. Argandykov signed a Memorandum of Cooperation and Interaction between the RSE of the Ministry of Science and Higher Education of the Republic of Kazakhstan 'National Center for the Development of Higher Education' and the JSC 'Center for the Development of Labor Resources' of the Ministry of Labor and Social Protection of the Population of the Republic of Kazakhstan."
+msgstr ""
+"Today, on May 2, 2023, the Director of the National Center for the "
+"Development of Higher Education A.A. Mukhatayev and the President of the "
+"Center for the Development of Labor Resources D.R. Argandykov signed a "
+"Memorandum of Cooperation and Interaction between the RSE of the Ministry of "
+"Science and Higher Education of the Republic of Kazakhstan 'National Center "
+"for the Development of Higher Education' and the JSC 'Center for the "
+"Development of Labor Resources' of the Ministry of Labor and Social "
+"Protection of the Population of the Republic of Kazakhstan."
 
 #: app/templates/app/about/memorandum.html:53
 msgid ""
@@ -208,7 +220,10 @@ msgid ""
 "                        біліктілік жүйесін іске асыруда тараптардың тиімді "
 "өзара іс-қимылына бағытталған.\n"
 "                    "
-msgstr "The cooperation is aimed at effective interaction of the parties in the use of professional standards in the development of educational programs and the implementation of the National Qualifications System."
+msgstr ""
+"The cooperation is aimed at effective interaction of the parties in the use "
+"of professional standards in the development of educational programs and the "
+"implementation of the National Qualifications System."
 
 #: app/templates/app/about/memorandum.html:61
 msgid ""
@@ -218,7 +233,10 @@ msgid ""
 "                        әдіснамалық қолдауды қалыптастыру үшін негіз "
 "болады.\n"
 "                    "
-msgstr "The joint activities of the two centers will serve as the basis for the formation of the National Qualification System and methodological support for the training system of qualified personnel."
+msgstr ""
+"The joint activities of the two centers will serve as the basis for the "
+"formation of the National Qualification System and methodological support "
+"for the training system of qualified personnel."
 
 #: app/templates/app/about/social_life.html:36
 msgid "Бірге – таза Қазақстан"
@@ -240,7 +258,14 @@ msgid ""
 "                        көгалдандыру мен қоршаған ортаны қорғаудың тағы бір "
 "жарқын мысалы болды.\n"
 "                    "
-msgstr "The role of greenery in our lives cannot be overestimated. They not only affect human life, but also serve as a guarantee of environmental safety. As part of the environmental campaign 'Together - Clean Kazakhstan!', on May 1, 2021, the Bologna Process and the Academic Mobility Center took part in a city-wide sabbatical, the format of which was tree planting. This tree planting campaign was another vivid example of greening and environmental protection."
+msgstr ""
+"The role of greenery in our lives cannot be overestimated. They not only "
+"affect human life, but also serve as a guarantee of environmental safety. As "
+"part of the environmental campaign 'Together - Clean Kazakhstan!', on May 1, "
+"2021, the Bologna Process and the Academic Mobility Center took part in a "
+"city-wide sabbatical, the format of which was tree planting. This tree "
+"planting campaign was another vivid example of greening and environmental "
+"protection."
 
 #: app/templates/app/about/strategy.html:39
 msgid "Миссия"
@@ -254,7 +279,10 @@ msgid ""
 "                            параметрлерін ендіруді ғылыми-әдістемелік және "
 "ақпараттық-талдамалық қолдау.\n"
 "                        "
-msgstr "Scientific, methodological, informational and analytical support for the implementation of the Bologna Process parameters in the higher and postgraduate education system of Kazakhstan."
+msgstr ""
+"Scientific, methodological, informational and analytical support for the "
+"implementation of the Bologna Process parameters in the higher and "
+"postgraduate education system of Kazakhstan."
 
 #: app/templates/app/about/strategy.html:47
 msgid "Этот браузер не поддерживает PDF просмотр."
@@ -264,6 +292,62 @@ msgstr ""
 #: app/templates/app/article/list.html:26 app/templates/base.html:78
 msgid "Жаңалыктар"
 msgstr "News"
+
+#: app/templates/app/page/FAQ.html:5 app/templates/app/page/FAQ.html:14
+#: app/templates/app/page/FAQ.html:26 app/templates/app/page/home.html:156
+#: app/templates/base.html:83
+msgid "Сұрақ-жауап"
+msgstr "FAQ"
+
+#: app/templates/app/page/FAQ.html:41
+msgid "Дипломды тану қалай өтеді?"
+msgstr "How is the diploma recognized?"
+
+#: app/templates/app/page/FAQ.html:46
+msgid ""
+"Дипломды тану үшін ENIC-Kazakhstan сайтындағы өтінім формасын толтырып, "
+"қажетті құжаттарды жүктеу қажет."
+msgstr "To have your diploma recognized, you must fill out the application form on the ENIC-Kazakhstan website and upload the necessary documents."
+
+#: app/templates/app/page/FAQ.html:55
+msgid "Қандай құжаттар қажет?"
+msgstr "What documents are needed?"
+
+#: app/templates/app/page/FAQ.html:60
+msgid ""
+"Жеке куәлік, диплом, қосымша (транскрипт), төлқұжаттың көшірмесі және қажет "
+"болған жағдайда аудармалар талап етіледі."
+msgstr "An ID card, diploma, transcript, copy of passport, and translations if necessary are required."
+
+#: app/templates/app/page/FAQ.html:69
+msgid "Аккредитация дегеніміз не?"
+msgstr "What is accreditation?"
+
+#: app/templates/app/page/FAQ.html:74
+msgid ""
+"Аккредитация — бұл оқу ордасының білім беру қызметінің сапасын тәуелсіз "
+"бағалау рәсімі."
+msgstr "Accreditation is a procedure for independently assessing the quality of educational services provided by an educational institution."
+
+#: app/templates/app/page/FAQ.html:83
+msgid "Болон үдерісі не береді?"
+msgstr "What does the Bologna Process deliver?"
+
+#: app/templates/app/page/FAQ.html:88
+msgid ""
+"Болон үдерісі — Еуропалық жоғары білім кеңістігінде білім сапасын арттыру "
+"мен студенттердің мобильділігін қамтамасыз етуге бағытталған бастама."
+msgstr "The Bologna Process is an initiative aimed at improving the quality of education and ensuring student mobility in the European Higher Education Area."
+
+#: app/templates/app/page/FAQ.html:97
+msgid "Жауапты қайдан алуға болады?"
+msgstr "Where can I get the answer?"
+
+#: app/templates/app/page/FAQ.html:102
+msgid ""
+"Сіз бізге сайттағы байланыс формасы арқылы немесе көрсетілген байланыс "
+"нөмірлері арқылы хабарласа аласыз."
+msgstr "You can contact us via the contact form on the site or via the contact numbers provided."
 
 #: app/templates/app/page/contact.html:6 app/templates/app/page/contact.html:15
 #: app/templates/app/page/contact.html:27 app/templates/app/page/home.html:170
@@ -334,7 +418,9 @@ msgstr "Relevant information about higher education in one place"
 msgid ""
 "ENIC.KZ — құжаттарды тану, аккредитация және Болон үдерісі бойынша ресми "
 "портал."
-msgstr "ENIC.KZ is the official portal for document recognition, accreditation and the Bologna process."
+msgstr ""
+"ENIC.KZ is the official portal for document recognition, accreditation and "
+"the Bologna process."
 
 #: app/templates/app/page/home.html:49
 msgid "ЖОО аккредитациясын тексеру"
@@ -379,10 +465,6 @@ msgstr "Bologna Process"
 #: app/templates/app/page/home.html:149
 msgid "Дипломды тану"
 msgstr "Diploma recognition"
-
-#: app/templates/app/page/home.html:156 app/templates/base.html:83
-msgid "Сұрақ-жауап"
-msgstr "FAQ"
 
 #: app/templates/app/page/home.html:163
 msgid "Калькулятор"

@@ -80,7 +80,7 @@
                 <li><a href="{% url 'app:contact' %}"
                        {% if '/contact' in request.path %}class="active"{% endif %}>{% trans 'Байланыс' %}</a>
                 </li>
-                <li><a href="#">{% trans 'Сұрақ-жауап' %}</a></li>
+                <li><a href="{% url 'app:faq' %}" {% if '/FAQ' in request.path %}class="active"{% endif %}>{% trans 'Сұрақ-жауап' %}</a></li>
                 <li class="dropdown">
                     <a href="#"><span>{% trans 'ЖОО' %}</span> <i
                             class="bi bi-chevron-down toggle-dropdown"></i></a>

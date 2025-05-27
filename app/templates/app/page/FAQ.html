@@ -1,0 +1,111 @@
+{% extends 'base.html' %}
+{% load i18n %}
+
+{% block title %}
+    {% trans 'Сұрақ-жауап' %}
+{% endblock %}
+
+{% block content %}
+    <div class="page-title aos-init aos-animate" data-aos="fade">
+        <div class="heading">
+            <div class="container">
+                <div class="row d-flex justify-content-center text-center">
+                    <div class="col-lg-8">
+                        <h1>{% trans 'Сұрақ-жауап' %}<br></h1>
+                        <p class="mb-0">
+                            {% trans 'ЖОҒАРЫ БІЛІМ БЕРУДІ ДАМЫТУ ҰЛТТЫҚ ОРТАЛЫҒЫ' %}
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <nav class="breadcrumbs">
+            <div class="container">
+                <ol>
+                    <li><a href="{% url 'app:home' %}">{% trans 'Басты' %}</a></li>
+                    <li class="current">{% trans 'Сұрақ-жауап' %}<br></li>
+                </ol>
+            </div>
+        </nav>
+    </div>
+
+
+    <section class="section">
+        <div class="container">
+            <div class="accordion" id="faqAccordion">
+
+                <div class="accordion-item">
+                    <h2 class="accordion-header" id="faq1">
+                        <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                                data-bs-target="#collapse1">
+                            📄 {% trans 'Дипломды тану қалай өтеді?' %}
+                        </button>
+                    </h2>
+                    <div id="collapse1" class="accordion-collapse collapse" data-bs-parent="#faqAccordion">
+                        <div class="accordion-body">
+                            {% trans 'Дипломды тану үшін ENIC-Kazakhstan сайтындағы өтінім формасын толтырып, қажетті құжаттарды жүктеу қажет.' %}
+                        </div>
+                    </div>
+                </div>
+
+                <div class="accordion-item">
+                    <h2 class="accordion-header" id="faq2">
+                        <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                                data-bs-target="#collapse2">
+                            📎 {% trans 'Қандай құжаттар қажет?' %}
+                        </button>
+                    </h2>
+                    <div id="collapse2" class="accordion-collapse collapse" data-bs-parent="#faqAccordion">
+                        <div class="accordion-body">
+                            {% trans 'Жеке куәлік, диплом, қосымша (транскрипт), төлқұжаттың көшірмесі және қажет болған жағдайда аудармалар талап етіледі.' %}
+                        </div>
+                    </div>
+                </div>
+
+                <div class="accordion-item">
+                    <h2 class="accordion-header" id="faq3">
+                        <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                                data-bs-target="#collapse3">
+                            ✅ {% trans 'Аккредитация дегеніміз не?' %}
+                        </button>
+                    </h2>
+                    <div id="collapse3" class="accordion-collapse collapse" data-bs-parent="#faqAccordion">
+                        <div class="accordion-body">
+                            {% trans 'Аккредитация — бұл оқу ордасының білім беру қызметінің сапасын тәуелсіз бағалау рәсімі.' %}
+                        </div>
+                    </div>
+                </div>
+
+                <div class="accordion-item">
+                    <h2 class="accordion-header" id="faq4">
+                        <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                                data-bs-target="#collapse4">
+                            🌍 {% trans 'Болон үдерісі не береді?' %}
+                        </button>
+                    </h2>
+                    <div id="collapse4" class="accordion-collapse collapse" data-bs-parent="#faqAccordion">
+                        <div class="accordion-body">
+                            {% trans 'Болон үдерісі — Еуропалық жоғары білім кеңістігінде білім сапасын арттыру мен студенттердің мобильділігін қамтамасыз етуге бағытталған бастама.' %}
+                        </div>
+                    </div>
+                </div>
+
+                <div class="accordion-item">
+                    <h2 class="accordion-header" id="faq5">
+                        <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                                data-bs-target="#collapse5">
+                            ☎ {% trans 'Жауапты қайдан алуға болады?' %}
+                        </button>
+                    </h2>
+                    <div id="collapse5" class="accordion-collapse collapse" data-bs-parent="#faqAccordion">
+                        <div class="accordion-body">
+                            {% trans 'Сіз бізге сайттағы байланыс формасы арқылы немесе көрсетілген байланыс нөмірлері арқылы хабарласа аласыз.' %}
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </section>
+
+{% endblock %}

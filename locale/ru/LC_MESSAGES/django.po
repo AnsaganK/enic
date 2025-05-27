@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2025-05-27 14:27+0500\n"
+"POT-Creation-Date: 2025-05-27 15:47+0500\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -35,7 +35,7 @@ msgstr "О центре"
 #: app/templates/app/about/social_life.html:17
 #: app/templates/app/about/strategy.html:17
 #: app/templates/app/about/structure.html:17
-#: app/templates/app/article/list.html:16
+#: app/templates/app/article/list.html:16 app/templates/app/page/FAQ.html:16
 #: app/templates/app/page/contact.html:17
 #: app/templates/app/user/cabinet.html:16
 msgid "ЖОҒАРЫ БІЛІМ БЕРУДІ ДАМЫТУ ҰЛТТЫҚ ОРТАЛЫҒЫ"
@@ -46,7 +46,7 @@ msgstr "НАЦИОНАЛЬНЫЙ ЦЕНТР РАЗВИТИЯ ВЫСШЕГО ОБ
 #: app/templates/app/about/social_life.html:26
 #: app/templates/app/about/strategy.html:26
 #: app/templates/app/about/structure.html:26
-#: app/templates/app/article/list.html:25
+#: app/templates/app/article/list.html:25 app/templates/app/page/FAQ.html:25
 #: app/templates/app/page/contact.html:26
 #: app/templates/app/user/cabinet.html:25 app/templates/base.html:64
 #: app/templates/registration/login.html:13
@@ -291,6 +291,62 @@ msgstr ""
 msgid "Жаңалыктар"
 msgstr "Новости"
 
+#: app/templates/app/page/FAQ.html:5 app/templates/app/page/FAQ.html:14
+#: app/templates/app/page/FAQ.html:26 app/templates/app/page/home.html:156
+#: app/templates/base.html:83
+msgid "Сұрақ-жауап"
+msgstr "Вопрос-ответ"
+
+#: app/templates/app/page/FAQ.html:41
+msgid "Дипломды тану қалай өтеді?"
+msgstr "Как признается диплом?"
+
+#: app/templates/app/page/FAQ.html:46
+msgid ""
+"Дипломды тану үшін ENIC-Kazakhstan сайтындағы өтінім формасын толтырып, "
+"қажетті құжаттарды жүктеу қажет."
+msgstr "Для признания вашего диплома вам необходимо заполнить заявку на сайте ENIC-Kazakhstan и загрузить необходимые документы."
+
+#: app/templates/app/page/FAQ.html:55
+msgid "Қандай құжаттар қажет?"
+msgstr "Какие документы необходимы?"
+
+#: app/templates/app/page/FAQ.html:60
+msgid ""
+"Жеке куәлік, диплом, қосымша (транскрипт), төлқұжаттың көшірмесі және қажет "
+"болған жағдайда аудармалар талап етіледі."
+msgstr "Требуются удостоверение личности, диплом, копия паспорта и переводы при необходимости."
+
+#: app/templates/app/page/FAQ.html:69
+msgid "Аккредитация дегеніміз не?"
+msgstr "Что такое аккредитация?"
+
+#: app/templates/app/page/FAQ.html:74
+msgid ""
+"Аккредитация — бұл оқу ордасының білім беру қызметінің сапасын тәуелсіз "
+"бағалау рәсімі."
+msgstr "Аккредитация — процедура независимой оценки качества образовательных услуг, предоставляемых образовательным учреждением."
+
+#: app/templates/app/page/FAQ.html:83
+msgid "Болон үдерісі не береді?"
+msgstr "Что дает Болонский процесс?"
+
+#: app/templates/app/page/FAQ.html:88
+msgid ""
+"Болон үдерісі — Еуропалық жоғары білім кеңістігінде білім сапасын арттыру "
+"мен студенттердің мобильділігін қамтамасыз етуге бағытталған бастама."
+msgstr "Болонский процесс — это инициатива, направленная на повышение качества образования и обеспечение мобильности студентов в Европейском пространстве высшего образования."
+
+#: app/templates/app/page/FAQ.html:97
+msgid "Жауапты қайдан алуға болады?"
+msgstr "Где я могу получить ответ?"
+
+#: app/templates/app/page/FAQ.html:102
+msgid ""
+"Сіз бізге сайттағы байланыс формасы арқылы немесе көрсетілген байланыс "
+"нөмірлері арқылы хабарласа аласыз."
+msgstr "Вы можете связаться с нами через контактную форму на сайте или по указанным контактным номерам."
+
 #: app/templates/app/page/contact.html:6 app/templates/app/page/contact.html:15
 #: app/templates/app/page/contact.html:27 app/templates/app/page/home.html:170
 #: app/templates/base.html:81
@@ -342,9 +398,7 @@ msgstr "Главная страница"
 msgid ""
 "Білімге жол<br> болашаққа бастар\n"
 "                        бағыт"
-msgstr ""
-"Путь к знаниям <br>"
-"направление на будущее"
+msgstr "Путь к знаниям <br>направление на будущее"
 
 #: app/templates/app/page/home.html:23
 msgid "Жоғары білімді дамытудың заманауи платформасы"
@@ -409,10 +463,6 @@ msgstr "Болонский процесс"
 #: app/templates/app/page/home.html:149
 msgid "Дипломды тану"
 msgstr "Признание диплома"
-
-#: app/templates/app/page/home.html:156 app/templates/base.html:83
-msgid "Сұрақ-жауап"
-msgstr "Вопрос-ответ"
 
 #: app/templates/app/page/home.html:163
 msgid "Калькулятор"

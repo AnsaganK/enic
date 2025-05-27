@@ -4,6 +4,7 @@ from . import views
 app_name = 'app'
 urlpatterns = [
     path('', views.home, name='home'),
+
     # About urls
     path('about', views.about, name='about'),
     path('about/strategy', views.about_strategy, name='about_strategy'),
@@ -16,8 +17,9 @@ urlpatterns = [
     path('article/create', views.article_create, name='article_create'),
     path('article/<slug:slug>', views.article_detail, name='article_detail'),
 
-    # Contact urls
+    # Pages
     path('contact', views.contact, name='contact'),
+    path('FAQ', views.faq, name='faq'),
 
     # User views
     path('registration', views.registration, name='registration'),

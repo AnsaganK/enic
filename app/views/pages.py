@@ -8,3 +8,7 @@ def home(request):
 
 def contact(request):
     return render(request, 'app/page/contact.html')
+
+
+def faq(request):
+    return render(request, 'app/page/FAQ.html')
