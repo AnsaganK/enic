@@ -54,3 +54,6 @@ htmlcov/
 
 # VSCode settings
 *.code-workspace
+
+# Media dir
+media
