@@ -1,4 +1,4 @@
-{% load static %}
+{% load static i18n %}
 <!DOCTYPE html>
 <html lang="en">
 
@@ -60,26 +60,29 @@
 
         <nav id="navmenu" class="navmenu">
             <ul>
-                <li><a href="{% url 'app:home' %}" {% if request.path == '/' %}class="active"{% endif %}>Басты<br></a>
+                <li><a href="{% url 'app:home' %}"
+                       {% if request.path == '/' %}class="active"{% endif %}>{% trans 'Басты' %}<br></a>
                 </li>
                 <li class="dropdown">
                     <a href="{% url 'app:about' %}" {% if '/about' in request.path %}class="active"{% endif %}>
-                        <span>Орталық туралы</span> <i class="bi bi-chevron-down toggle-dropdown"></i>
+                        <span>{% trans 'Орталық туралы' %}</span> <i class="bi bi-chevron-down toggle-dropdown"></i>
                     </a>
                     <ul>
-                        <li><a href="{% url 'app:about_strategy' %}">Стратегиясы және міндеті</a></li>
-                        <li><a href="{% url 'app:about_structure' %}">Құрылымы</a></li>
-                        <li><a href="{% url 'app:about_memorandum' %}">Орталықтың Меморандумдары</a></li>
-                        <li><a href="{% url 'app:about_social_life' %}">Қоғамдық өмір</a></li>
+                        <li><a href="{% url 'app:about_strategy' %}">{% trans 'Стратегиясы және міндеті' %}</a></li>
+                        <li><a href="{% url 'app:about_structure' %}">{% trans 'Құрылымы' %}</a></li>
+                        <li><a href="{% url 'app:about_memorandum' %}">{% trans 'Орталықтың Меморандумдары' %}</a></li>
+                        <li><a href="{% url 'app:about_social_life' %}">{% trans 'Қоғамдық өмір' %}</a></li>
                     </ul>
                 </li>
-                <li><a href="{% url 'app:article_list' %}" {% if '/article' in request.path %}class="active"{% endif %}>Жаналыктыр</a>
+                <li><a href="{% url 'app:article_list' %}"
+                       {% if '/article' in request.path %}class="active"{% endif %}>{% trans 'Жаңалыктар' %}</a>
                 </li>
-                <li><a href="{% url 'app:contact' %}" {% if '/contact' in request.path %}class="active"{% endif %}>Байланыс</a>
+                <li><a href="{% url 'app:contact' %}"
+                       {% if '/contact' in request.path %}class="active"{% endif %}>{% trans 'Байланыс' %}</a>
                 </li>
-                <li><a href="events.html">Сұрақ-жауап</a></li>
+                <li><a href="#">{% trans 'Сұрақ-жауап' %}</a></li>
                 <li class="dropdown">
-                    <a href="#"><span>ЖОО</span> <i
+                    <a href="#"><span>{% trans 'ЖОО' %}</span> <i
                             class="bi bi-chevron-down toggle-dropdown"></i></a>
                     <ul>
                         <li><a href="#"></a></li>
@@ -99,6 +102,17 @@
                     </ul>
                 </li>
                 <li>
+                    {% get_current_language as LANGUAGE_CODE %}
+                    <form action="{% url 'set_language' %}" method="post">
+                        {% csrf_token %}
+                        <select name="language" class="form-control form-select" onchange="this.form.submit()">
+                            <option value="kk" {% if LANGUAGE_CODE == "kk" %}selected{% endif %}>Қазақша</option>
+                            <option value="ru" {% if LANGUAGE_CODE == "ru" %}selected{% endif %}>Русский</option>
+                            <option value="en" {% if LANGUAGE_CODE == "en" %}selected{% endif %}>English</option>
+                        </select>
+                    </form>
+                </li>
+                <li>
                     {% if request.user.is_authenticated %}
                         <a href="{% url 'app:cabinet' %}" class="btn-login">
                             <i class="bi bi-person-check me-3"></i>
@@ -107,7 +121,7 @@
                     {% else %}
                         <a href="{% url 'login' %}" class="btn-login">
                             <i class="bi bi-person me-3"></i>
-                            Кабинет
+                            {% trans 'Кабинет' %}
                         </a>
                     {% endif %}
                 </li>
@@ -122,7 +136,7 @@
 
 {% if messages %}
     <div class="container mt-3">
-        <div class="messages"  style="position: absolute;
+        <div class="messages" style="position: absolute;
     z-index: 100;
     max-width: 450px;
     width: 100%;">
@@ -143,7 +157,7 @@
     <div class="container footer-top">
         <div class="row gy-4">
             <div class="col-lg-4 col-md-6 footer-about">
-                <a href="index.html" class="d-flex align-items-center">
+                <a href="{% url 'app:home' %}" class="d-flex align-items-center">
                     <img src="{% static 'app/img/enic.png' %}" alt="" height="120">
                 </a>
                 <div class="footer-contact pt-3">
@@ -162,20 +176,21 @@
             </div>
 
             <div class="col-lg-2 col-md-3 footer-links">
-                <h4>Пайдалы силтимелер</h4>
+                <h4>{% trans 'Пайдалы сілтемелер' %}</h4>
                 <ul>
-                    <li><a href="#">Закупки</a></li>
-                    <li><a href="#">Вакансии</a></li>
-                    <li><a href="#">Политика конфидициальности</a></li>
+                    <li><a href="#">{% trans 'Сатып алулар' %}</a></li>
+                    <li><a href="#">{% trans 'Жұмыс орындары' %}</a></li>
+                    <li><a href="#">{% trans 'Құпиялылық саясаты' %}</a></li>
                 </ul>
             </div>
 
             <div class="col-lg-2 col-md-3 footer-links">
-                <h4>Центр туралы</h4>
+                <h4>{% trans 'Орталық туралы' %}</h4>
                 <ul>
-                    <li><a href="#">Структура</a></li>
-                    <li><a href="#">Руководство</a></li>
-                    <li><a href="#">Команда</a></li>
+                    <li><a href="{% url 'app:about_strategy' %}">{% trans 'Стратегиясы және міндеті' %}</a></li>
+                    <li><a href="{% url 'app:about_structure' %}">{% trans 'Құрылымы' %}</a></li>
+                    <li><a href="{% url 'app:about_memorandum' %}">{% trans 'Орталықтың Меморандумдары' %}</a></li>
+                    <li><a href="{% url 'app:about_social_life' %}">{% trans 'Қоғамдық өмір' %}</a></li>
                 </ul>
             </div>
 
