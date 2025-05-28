@@ -580,7 +580,7 @@ msgstr "Management team"
 
 #: app/templates/app/page/home.html:258
 msgid "ДИРЕКТОР"
-msgstr "ДИРЕКТОР"
+msgstr "DIRECTOR"
 
 #: app/templates/app/page/home.html:272 app/templates/app/page/home.html:289
 #: app/templates/app/page/home.html:305
@@ -589,7 +589,7 @@ msgstr "DEPUTY DIRECTOR"
 
 #: app/templates/app/page/home.html:321
 msgid "ДИРЕКТОР КЕҢЕСШІСІ"
-msgstr "ДИРЕКТОР КЕҢЕСШІСІ"
+msgstr "DIRECTOR'S ADVISOR"
 
 #: app/templates/app/university/list.html:33
 msgid "Іздеу"
