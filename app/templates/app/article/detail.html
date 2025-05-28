@@ -1,0 +1,43 @@
+{% extends 'base.html' %}
+{% load i18n %}
+
+{% block title %}
+    {{ article.title }}
+{% endblock %}
+
+
+{% block content %}
+    <div class="page-title aos-init aos-animate" data-aos="fade">
+        <div class="heading">
+            <div class="container">
+                <div class="row d-flex justify-content-center text-center">
+                    <div class="col-lg-8">
+                        <h1>{{ article.title }}<br></h1>
+                        <p class="mb-0">
+                            {% trans 'ЖОҒАРЫ БІЛІМ БЕРУДІ ДАМЫТУ ҰЛТТЫҚ ОРТАЛЫҒЫ' %}
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <nav class="breadcrumbs">
+            <div class="container">
+                <ol>
+                    <li><a href="{% url 'app:home' %}">{% trans 'Басты' %}</a></li>
+                    <li><a href="{% url 'app:article_list' %}">{% trans 'Жаңалыктар' %}</a></li>
+                    <li class="current">{{ article.title }}<br></li>
+                </ol>
+            </div>
+        </nav>
+    </div>
+    <section class="section">
+        <div class="container">
+            <span class="text-black-50">{% trans 'Күні' %}: {{ article.created_at|date:'d-m-Y H:i' }}</span>
+            <hr>
+            <h4 class="text-center">
+                {{ article.title }}
+            </h4>
+            {{ article.content }}
+        </div>
+    </section>
+{% endblock %}

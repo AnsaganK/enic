@@ -1,5 +1,6 @@
 {% extends 'base.html' %}
 {% load i18n %}
+{% load static %}
 
 {% block title %}
     {% trans 'Жаңалыктар' %}
@@ -37,16 +38,10 @@
                     <div class="col-lg-4 col-md-6 d-flex align-items-stretch aos-init aos-animate" data-aos="zoom-in"
                          data-aos-delay="100">
                         <div class="course-item">
-                            <img src="" class="img-fluid" alt="...">
+                            <img src="{% if article.img %}{{ article.img.url }}{% else %}{% static 'app/img/enic.png' %}{% endif %}" class="img-fluid" alt="{{ article.title }}" style="height: 250px">
                             <div class="course-content">
-
-                                <h3><a href="course-details.html">{{ article.title }}</a></h3>
+                                <h3><a href="{{ article.get_absolute_url }}">{{ article.title|default:'' }}</a></h3>
                                 <p class="description">{{ article.content|truncatewords:10 }}</p>
-                                <div class="trainer d-flex justify-content-between align-items-center">
-                                    <div class="trainer-profile d-flex align-items-center">
-                                        <img src="assets/img/trainers/trainer-1-2.jpg" class="img-fluid" alt="">
-                                    </div>
-                                </div>
                             </div>
                         </div>
                     </div> <!-- End Course Item-->

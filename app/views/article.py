@@ -1,5 +1,6 @@
 from django.shortcuts import render, get_object_or_404
 
+from app.forms import ArticleForm
 from app.models import Article
 
 
@@ -18,4 +19,6 @@ def article_detail(request, slug):
 
 
 def article_create(request):
-    pass
+    if request.method == 'POST':
+        form = ArticleForm()
+        pass

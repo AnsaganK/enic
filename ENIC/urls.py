@@ -5,6 +5,10 @@ from django.urls import path, include
 from django.contrib.auth import views as acc
 from django.views.i18n import set_language
 
+admin.site.site_title = "ENIC.KZ"
+admin.site.site_header = "ENIC.KZ"
+admin.site.index_title = "Site administration"
+
 urlpatterns = [
     path('admin/', admin.site.urls),
     path('', include('app.urls', namespace='app')),

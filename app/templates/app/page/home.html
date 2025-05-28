@@ -205,6 +205,7 @@
                             <h3><a href="#" class="stretched-link">{% trans 'Пікір қалдыру' %}</a></h3>
                         </div>
                     </div><!-- End Feature Item -->
+                    <p class="text-center mt-3 text-muted" data-aos="fade-up" data-aos-delay="1300">Керекті бөлімді таңдап, көбірек ақпарат алыңыз</p>
 
                 </div>
 
@@ -223,13 +224,13 @@
 
             <div class="container">
                 <div class="row">
-                    {% for article in last_articles %}
+                    {% for article in latest_articles %}
                         <div class="col-lg-4 col-md-6 d-flex align-items-stretch" data-aos="zoom-in"
                              data-aos-delay="100">
                             <div class="course-item">
-                                <img src="{% static 'app/img/course-1.jpg' %}" class="img-fluid" alt="...">
+                                <img src="{% if article.img %}{{ article.img.url }}{% else %}{% static 'app/img/enic.png' %}{% endif %}" class="img-fluid" alt="{{ article.title }}" style="height: 250px">
                                 <div class="course-content">
-                                    <h3><a href="{{ article.get_absolute_url }}">{{ article.title }}</a></h3>
+                                    <h3><a href="{{ article.get_absolute_url }}">{{ article.title|default:'' }}</a></h3>
                                     <p class="description">{{ article.content|truncatewords_html:10 }}</p>
                                 </div>
                             </div>
