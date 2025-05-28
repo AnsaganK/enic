@@ -30,7 +30,9 @@
     </div>
     <section class="section">
         <div class="container">
-            <table class="table table-bordered">
+            <input type="text" id="search" class="form-control text-center" placeholder="Поиск по таблице"/>
+            <hr>
+            <table class="table table-bordered" id="universityTable">
                 <thead class="text-center">
                 <tr>
                     <th class="header">№</th>
@@ -686,4 +688,17 @@
             </table>
         </div>
     </section>
+{% endblock %}
+
+
+{% block script %}
+    <script>
+        document.getElementById('search').addEventListener('keyup', function () {
+            let filter = this.value.toLowerCase();
+            let rows = document.querySelectorAll('#universityTable tbody tr');
+            rows.forEach(row => {
+                row.style.display = row.textContent.toLowerCase().includes(filter) ? '' : 'none';
+            });
+        });
+    </script>
 {% endblock %}
