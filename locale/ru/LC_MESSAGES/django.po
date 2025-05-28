@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2025-05-28 08:56+0500\n"
+"POT-Creation-Date: 2025-05-28 08:59+0500\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -524,7 +524,11 @@ msgstr "Очная форма"
 msgid "ЖОО тізімі"
 msgstr "Список ВУЗов"
 
-#: app/templates/app/page/home.html:135 app/templates/app/page/home.html:142
+#: app/templates/app/page/home.html:135
+msgid "Статистика"
+msgstr "Статистика"
+
+#: app/templates/app/page/home.html:142
 msgid "Болон процесі"
 msgstr "Болонский процесс"
 
