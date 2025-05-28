@@ -5,7 +5,7 @@ from app.models import Article
 
 
 def article_list(request):
-    articles = Article.objects.all()
+    articles = Article.objects.all().order_by('-id')
     return render(request, 'app/article/list.html', {
         'articles': articles,
     })
