@@ -29,6 +29,8 @@ urlpatterns = [
     path('registration', views.registration, name='registration'),
     path('cabinet', views.cabinet, name='cabinet'),
 
+    # University views
+    path('university', views.university_list, name='university_list'),
     # path('news', views.news_list, name='news_list'),
     # path('news/<slug:slug>', views.news_detail, name='news_detail'),
     # path('contact', views.contact, name='contact'),

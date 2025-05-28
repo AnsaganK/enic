@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2025-05-28 08:16+0500\n"
+"POT-Creation-Date: 2025-05-28 08:46+0500\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -37,6 +37,7 @@ msgstr "About the center"
 #: app/templates/app/article/list.html:17
 #: app/templates/app/contact/contact.html:17
 #: app/templates/app/contact/list.html:41 app/templates/app/page/FAQ.html:16
+#: app/templates/app/university/list.html:16
 #: app/templates/app/user/cabinet.html:16
 msgid "ЖОҒАРЫ БІЛІМ БЕРУДІ ДАМЫТУ ҰЛТТЫҚ ОРТАЛЫҒЫ"
 msgstr "NATIONAL CENTER FOR THE DEVELOPMENT OF HIGHER EDUCATION"
@@ -50,6 +51,7 @@ msgstr "NATIONAL CENTER FOR THE DEVELOPMENT OF HIGHER EDUCATION"
 #: app/templates/app/article/list.html:26
 #: app/templates/app/contact/contact.html:26
 #: app/templates/app/contact/list.html:50 app/templates/app/page/FAQ.html:25
+#: app/templates/app/university/list.html:25
 #: app/templates/app/user/cabinet.html:25 app/templates/base.html:64
 #: app/templates/registration/login.html:13
 #: app/templates/registration/registration.html:13
@@ -501,7 +503,8 @@ msgstr "Introduction to the Bologna Process"
 msgid "Тағы"
 msgstr "More"
 
-#: app/templates/app/page/home.html:78 app/templates/base.html:86
+#: app/templates/app/page/home.html:78 app/templates/app/university/list.html:5
+#: app/templates/base.html:86
 msgid "ЖОО"
 msgstr "University"
 
@@ -518,6 +521,8 @@ msgid "Күндізгі форматта"
 msgstr "In daytime format"
 
 #: app/templates/app/page/home.html:128
+#: app/templates/app/university/list.html:14
+#: app/templates/app/university/list.html:26
 msgid "ЖОО тізімі"
 msgstr "List of universities"
 
