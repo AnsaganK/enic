@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2025-05-28 08:46+0500\n"
+"POT-Creation-Date: 2025-05-28 08:56+0500\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -582,6 +582,10 @@ msgstr "DEPUTY DIRECTOR"
 #: app/templates/app/page/home.html:321
 msgid "ДИРЕКТОР КЕҢЕСШІСІ"
 msgstr "ДИРЕКТОР КЕҢЕСШІСІ"
+
+#: app/templates/app/university/list.html:33
+msgid "Іздеу"
+msgstr "Search"
 
 #: app/templates/app/user/cabinet.html:5 app/templates/app/user/cabinet.html:14
 #: app/templates/app/user/cabinet.html:26
