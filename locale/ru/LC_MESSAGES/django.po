@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2025-05-28 08:59+0500\n"
+"POT-Creation-Date: 2025-05-28 09:04+0500\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -559,6 +559,10 @@ msgstr "Учебные программы"
 #: app/templates/app/page/home.html:205
 msgid "Пікір қалдыру"
 msgstr "Оставить отзыв"
+
+#: app/templates/app/page/home.html:208
+msgid "Керекті бөлімді таңдап, көбірек ақпарат алыңыз"
+msgstr "Выберите соответствующий раздел и получите более подробную информацию."
 
 #: app/templates/app/page/home.html:221
 msgid "Жаңалықтар"
