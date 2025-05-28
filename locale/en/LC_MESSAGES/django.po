@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2025-05-27 21:00+0500\n"
+"POT-Creation-Date: 2025-05-28 08:16+0500\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -33,7 +33,8 @@ msgstr "About the center"
 #: app/templates/app/about/social_life.html:17
 #: app/templates/app/about/strategy.html:17
 #: app/templates/app/about/structure.html:17
-#: app/templates/app/article/list.html:16
+#: app/templates/app/article/detail.html:17
+#: app/templates/app/article/list.html:17
 #: app/templates/app/contact/contact.html:17
 #: app/templates/app/contact/list.html:41 app/templates/app/page/FAQ.html:16
 #: app/templates/app/user/cabinet.html:16
@@ -45,7 +46,8 @@ msgstr "NATIONAL CENTER FOR THE DEVELOPMENT OF HIGHER EDUCATION"
 #: app/templates/app/about/social_life.html:26
 #: app/templates/app/about/strategy.html:26
 #: app/templates/app/about/structure.html:26
-#: app/templates/app/article/list.html:25
+#: app/templates/app/article/detail.html:26
+#: app/templates/app/article/list.html:26
 #: app/templates/app/contact/contact.html:26
 #: app/templates/app/contact/list.html:50 app/templates/app/page/FAQ.html:25
 #: app/templates/app/user/cabinet.html:25 app/templates/base.html:64
@@ -290,10 +292,15 @@ msgstr ""
 msgid "Этот браузер не поддерживает PDF просмотр."
 msgstr ""
 
-#: app/templates/app/article/list.html:5 app/templates/app/article/list.html:14
-#: app/templates/app/article/list.html:26 app/templates/base.html:78
+#: app/templates/app/article/detail.html:27
+#: app/templates/app/article/list.html:6 app/templates/app/article/list.html:15
+#: app/templates/app/article/list.html:27 app/templates/base.html:78
 msgid "Жаңалыктар"
 msgstr "News"
+
+#: app/templates/app/article/detail.html:35
+msgid "Күні"
+msgstr "Date"
 
 #: app/templates/app/contact/contact.html:6
 #: app/templates/app/contact/contact.html:15
@@ -546,28 +553,28 @@ msgstr "Educational programs"
 msgid "Пікір қалдыру"
 msgstr "Leave feedback"
 
-#: app/templates/app/page/home.html:220
+#: app/templates/app/page/home.html:221
 msgid "Жаңалықтар"
 msgstr "News"
 
-#: app/templates/app/page/home.html:221
+#: app/templates/app/page/home.html:222
 msgid "Соңғы жаңалыктар"
 msgstr "Latest news"
 
-#: app/templates/app/page/home.html:247
+#: app/templates/app/page/home.html:248
 msgid "Басшылық құрам"
 msgstr "Management team"
 
-#: app/templates/app/page/home.html:257
+#: app/templates/app/page/home.html:258
 msgid "ДИРЕКТОР"
 msgstr "ДИРЕКТОР"
 
-#: app/templates/app/page/home.html:271 app/templates/app/page/home.html:288
-#: app/templates/app/page/home.html:304
+#: app/templates/app/page/home.html:272 app/templates/app/page/home.html:289
+#: app/templates/app/page/home.html:305
 msgid "ДИРЕКТОР ОРЫНБАСАРЫ"
 msgstr "DEPUTY DIRECTOR"
 
-#: app/templates/app/page/home.html:320
+#: app/templates/app/page/home.html:321
 msgid "ДИРЕКТОР КЕҢЕСШІСІ"
 msgstr "ДИРЕКТОР КЕҢЕСШІСІ"
 
