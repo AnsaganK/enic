@@ -120,7 +120,7 @@
 
             let response = await fetch(detail_url);
             if (response.ok) {
-                modal_body.innerHTML = `<div class="spinner-border text-primary file_preloader_status" role="status">
+                modal_body.innerHTML = `<div class="spinner-border m-auto d-block" style="color: var(--accent-color)" role="status">
             <span class="visually-hidden">Loading...</span>
         </div>`;
                 let json = await response.json();

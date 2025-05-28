@@ -31,6 +31,8 @@ urlpatterns = [
 
     # University views
     path('university', views.university_list, name='university_list'),
+    path('university/map', views.university_map, name='university_map'),
+    path('university/<str:region_id>/json', views.region_universities, name='region_universities'),
     # path('news', views.news_list, name='news_list'),
     # path('news/<slug:slug>', views.news_detail, name='news_detail'),
     # path('contact', views.contact, name='contact'),

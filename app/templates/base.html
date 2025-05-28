@@ -88,28 +88,29 @@
                 </li>
                 <li><a href="{% url 'app:faq' %}"
                        {% if '/FAQ' in request.path %}class="active"{% endif %}>{% trans 'Сұрақ-жауап' %}</a></li>
-                <li><a href="{% url 'app:university_list' %}"
-                       {% if '/university' in request.path %}class="active"{% endif %}>{% trans 'ЖОО' %}</a></li>
-                {#                <li class="dropdown">#}
-                {#                    <a href="#"><span>{% trans 'ЖОО' %}</span> <i#}
-                {#                            class="bi bi-chevron-down toggle-dropdown"></i></a>#}
-                {#                    <ul>#}
-                {#                        <li><a href="#"></a></li>#}
-                {#                        <li class="dropdown"><a href="#"><span>Deep Dropdown</span> <i#}
-                {#                                class="bi bi-chevron-down toggle-dropdown"></i></a>#}
-                {#                            <ul>#}
-                {#                                <li><a href="#">Deep Dropdown 1</a></li>#}
-                {#                                <li><a href="#">Deep Dropdown 2</a></li>#}
-                {#                                <li><a href="#">Deep Dropdown 3</a></li>#}
-                {#                                <li><a href="#">Deep Dropdown 4</a></li>#}
-                {#                                <li><a href="#">Deep Dropdown 5</a></li>#}
-                {#                            </ul>#}
-                {#                        </li>#}
-                {#                        <li><a href="#">Dropdown 2</a></li>#}
-                {#                        <li><a href="#">Dropdown 3</a></li>#}
-                {#                        <li><a href="#">Dropdown 4</a></li>#}
-                {#                    </ul>#}
-                {#                </li>#}
+{#                <li><a href="{% url 'app:university_list' %}"#}
+{#                       {% if '/university' in request.path %}class="active"{% endif %}>{% trans 'ЖОО' %}</a></li>#}
+                <li class="dropdown">
+                    <a href="#" {% if '/university' in request.path %}class="active"{% endif %}><span>{% trans 'ЖОО' %}</span> <i
+                            class="bi bi-chevron-down toggle-dropdown"></i></a>
+                    <ul>
+                        <li><a href="{% url 'app:university_list' %}">{% trans 'Тізім' %}</a></li>
+                        <li><a href="{% url 'app:university_map' %}">{% trans 'Карта' %}</a></li>
+                        {#                        <li class="dropdown"><a href="#"><span>Deep Dropdown</span> <i#}
+                        {#                                class="bi bi-chevron-down toggle-dropdown"></i></a>#}
+                        {#                            <ul>#}
+                        {#                                <li><a href="#">Deep Dropdown 1</a></li>#}
+                        {#                                <li><a href="#">Deep Dropdown 2</a></li>#}
+                        {#                                <li><a href="#">Deep Dropdown 3</a></li>#}
+                        {#                                <li><a href="#">Deep Dropdown 4</a></li>#}
+                        {#                                <li><a href="#">Deep Dropdown 5</a></li>#}
+                        {#                            </ul>#}
+                        {#                        </li>#}
+                        {#                        <li><a href="#">Dropdown 2</a></li>#}
+                        {#                        <li><a href="#">Dropdown 3</a></li>#}
+                        {#                        <li><a href="#">Dropdown 4</a></li>#}
+                    </ul>
+                </li>
                 <li>
                     {% get_current_language as LANGUAGE_CODE %}
                     <form action="{% url 'set_language' %}" method="post">

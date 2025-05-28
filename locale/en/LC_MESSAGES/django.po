@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2025-05-28 09:04+0500\n"
+"POT-Creation-Date: 2025-05-29 01:12+0500\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -23,8 +23,8 @@ msgstr ""
 #: app/templates/app/about/memorandum.html:27
 #: app/templates/app/about/social_life.html:27
 #: app/templates/app/about/strategy.html:27
-#: app/templates/app/about/structure.html:27 app/templates/base.html:68
-#: app/templates/base.html:193
+#: app/templates/app/about/structure.html:27 app/templates/base.html:74
+#: app/templates/base.html:200
 msgid "Орталық туралы"
 msgstr "About the center"
 
@@ -52,7 +52,7 @@ msgstr "NATIONAL CENTER FOR THE DEVELOPMENT OF HIGHER EDUCATION"
 #: app/templates/app/contact/contact.html:26
 #: app/templates/app/contact/list.html:50 app/templates/app/page/FAQ.html:25
 #: app/templates/app/university/list.html:25
-#: app/templates/app/user/cabinet.html:25 app/templates/base.html:64
+#: app/templates/app/user/cabinet.html:25 app/templates/base.html:70
 #: app/templates/registration/login.html:13
 #: app/templates/registration/registration.html:13
 msgid "Басты"
@@ -156,32 +156,32 @@ msgstr "Collegiality in management and decision-making"
 #: app/templates/app/about/strategy.html:6
 #: app/templates/app/about/strategy.html:15
 #: app/templates/app/about/strategy.html:28
-#: app/templates/app/about/strategy.html:37 app/templates/base.html:71
-#: app/templates/base.html:195
+#: app/templates/app/about/strategy.html:37 app/templates/base.html:77
+#: app/templates/base.html:202
 msgid "Стратегиясы және міндеті"
 msgstr "Strategy and mission"
 
 #: app/templates/app/about/about.html:105
 #: app/templates/app/about/structure.html:6
 #: app/templates/app/about/structure.html:15
-#: app/templates/app/about/structure.html:28 app/templates/base.html:72
-#: app/templates/base.html:196
+#: app/templates/app/about/structure.html:28 app/templates/base.html:78
+#: app/templates/base.html:203
 msgid "Құрылымы"
 msgstr "Structure"
 
 #: app/templates/app/about/about.html:112
 #: app/templates/app/about/memorandum.html:6
 #: app/templates/app/about/memorandum.html:15
-#: app/templates/app/about/memorandum.html:28 app/templates/base.html:73
-#: app/templates/base.html:197
+#: app/templates/app/about/memorandum.html:28 app/templates/base.html:79
+#: app/templates/base.html:204
 msgid "Орталықтың Меморандумдары"
 msgstr "Memoranda of the Center"
 
 #: app/templates/app/about/about.html:119
 #: app/templates/app/about/social_life.html:6
 #: app/templates/app/about/social_life.html:15
-#: app/templates/app/about/social_life.html:28 app/templates/base.html:74
-#: app/templates/base.html:198
+#: app/templates/app/about/social_life.html:28 app/templates/base.html:80
+#: app/templates/base.html:205
 msgid "Қоғамдық өмір"
 msgstr "Public life"
 
@@ -296,7 +296,7 @@ msgstr ""
 
 #: app/templates/app/article/detail.html:27
 #: app/templates/app/article/list.html:6 app/templates/app/article/list.html:15
-#: app/templates/app/article/list.html:27 app/templates/base.html:78
+#: app/templates/app/article/list.html:27 app/templates/base.html:84
 msgid "Жаңалыктар"
 msgstr "News"
 
@@ -308,7 +308,7 @@ msgstr "Date"
 #: app/templates/app/contact/contact.html:15
 #: app/templates/app/contact/contact.html:27
 #: app/templates/app/contact/list.html:51 app/templates/app/page/home.html:170
-#: app/templates/base.html:81
+#: app/templates/base.html:87
 msgid "Байланыс"
 msgstr "Contact"
 
@@ -392,7 +392,7 @@ msgstr "Subject"
 
 #: app/templates/app/page/FAQ.html:5 app/templates/app/page/FAQ.html:14
 #: app/templates/app/page/FAQ.html:26 app/templates/app/page/home.html:156
-#: app/templates/base.html:84
+#: app/templates/base.html:90
 msgid "Сұрақ-жауап"
 msgstr "FAQ"
 
@@ -504,7 +504,7 @@ msgid "Тағы"
 msgstr "More"
 
 #: app/templates/app/page/home.html:78 app/templates/app/university/list.html:5
-#: app/templates/base.html:86
+#: app/templates/base.html:94
 msgid "ЖОО"
 msgstr "University"
 
@@ -595,6 +595,14 @@ msgstr "DIRECTOR'S ADVISOR"
 msgid "Іздеу"
 msgstr "Search"
 
+#: app/templates/app/university/map.html:5 app/templates/base.html:98
+msgid "Карта"
+msgstr "Map"
+
+#: app/templates/app/university/map.html:331
+msgid "ЖОО тізімін көру үшін картадағы облыс немесе қалаға басыңыз"
+msgstr "Click on a region or city on the map to see a list of universities."
+
 #: app/templates/app/user/cabinet.html:5 app/templates/app/user/cabinet.html:14
 #: app/templates/app/user/cabinet.html:26
 msgid "Жеке кабинет"
@@ -612,23 +620,27 @@ msgstr "Change"
 msgid "Шығу"
 msgstr "Logout"
 
-#: app/templates/base.html:127
+#: app/templates/base.html:97
+msgid "Тізім"
+msgstr "List"
+
+#: app/templates/base.html:134
 msgid "Кабинет"
 msgstr "Cabinet"
 
-#: app/templates/base.html:184
+#: app/templates/base.html:191
 msgid "Пайдалы сілтемелер"
 msgstr "Useful links"
 
-#: app/templates/base.html:186
+#: app/templates/base.html:193
 msgid "Сатып алулар"
 msgstr "Procurement"
 
-#: app/templates/base.html:187
+#: app/templates/base.html:194
 msgid "Жұмыс орындары"
 msgstr "Vacancies"
 
-#: app/templates/base.html:188
+#: app/templates/base.html:195
 msgid "Құпиялылық саясаты"
 msgstr "Privacy Policy"
 
