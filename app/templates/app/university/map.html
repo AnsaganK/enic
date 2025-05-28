@@ -6,11 +6,28 @@
 {% endblock %}
 
 {% block content %}
-    <style>
-        #map path:hover {
-            fill: #ffbf9d;
-        }
-    </style>
+    <div class="page-title aos-init aos-animate" data-aos="fade">
+        <div class="heading">
+            <div class="container">
+                <div class="row d-flex justify-content-center text-center">
+                    <div class="col-lg-8">
+                        <h1>{% trans 'Карта' %}<br></h1>
+                        <p class="mb-0">
+                            {% trans 'ЖОҒАРЫ БІЛІМ БЕРУДІ ДАМЫТУ ҰЛТТЫҚ ОРТАЛЫҒЫ' %}
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <nav class="breadcrumbs">
+            <div class="container">
+                <ol>
+                    <li><a href="{% url 'app:home' %}">{% trans 'Басты' %}</a></li>
+                    <li class="current">{% trans 'Карта' %}<br></li>
+                </ol>
+            </div>
+        </nav>
+    </div>
     <section class="section">
         <div class="container">
             <div class="row">

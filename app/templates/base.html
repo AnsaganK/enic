@@ -44,6 +44,10 @@
             font-size: 18px !important;
         }
 
+        #map path:hover {
+            fill: #ffbf9d;
+        }
+
         @media (max-width: 1199px) {
             .btn-login {
                 margin: 20px 0 0 0;
@@ -88,10 +92,11 @@
                 </li>
                 <li><a href="{% url 'app:faq' %}"
                        {% if '/FAQ' in request.path %}class="active"{% endif %}>{% trans 'Сұрақ-жауап' %}</a></li>
-{#                <li><a href="{% url 'app:university_list' %}"#}
-{#                       {% if '/university' in request.path %}class="active"{% endif %}>{% trans 'ЖОО' %}</a></li>#}
+                {#                <li><a href="{% url 'app:university_list' %}"#}
+                {#                       {% if '/university' in request.path %}class="active"{% endif %}>{% trans 'ЖОО' %}</a></li>#}
                 <li class="dropdown">
-                    <a href="#" {% if '/university' in request.path %}class="active"{% endif %}><span>{% trans 'ЖОО' %}</span> <i
+                    <a href="#"
+                       {% if '/university' in request.path %}class="active"{% endif %}><span>{% trans 'ЖОО' %}</span> <i
                             class="bi bi-chevron-down toggle-dropdown"></i></a>
                     <ul>
                         <li><a href="{% url 'app:university_list' %}">{% trans 'Тізім' %}</a></li>
