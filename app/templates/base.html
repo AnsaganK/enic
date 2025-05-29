@@ -95,7 +95,7 @@
                 {#                <li><a href="{% url 'app:university_list' %}"#}
                 {#                       {% if '/university' in request.path %}class="active"{% endif %}>{% trans 'ЖОО' %}</a></li>#}
                 <li class="dropdown">
-                    <a href="#"
+                    <a href="{% url 'app:university_list' %}"
                        {% if '/university' in request.path %}class="active"{% endif %}><span>{% trans 'ЖОО' %}</span> <i
                             class="bi bi-chevron-down toggle-dropdown"></i></a>
                     <ul>
@@ -185,6 +185,7 @@
                     <p><strong>E-mail:</strong> <span>cbpiam@n-k.kz</span></p>
                 </div>
                 <div class="social-links d-flex mt-4">
+                    <a href="https://t.me/enickz_bot" target="_blank"><i class="bi bi-telegram text-info"></i></a>
                     <a href="http://facebook.com/edugovrk" target="_blank"><i class="bi bi-facebook"></i></a>
                     <a href="http://instagram.com/edugovkz" target="_blank"><i class="bi bi-instagram"></i></a>
                     <a href="http://youtube.com/channel/UCj50gtGjP2EEsM_EJIqu7cA" target="_blank"><i

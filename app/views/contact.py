@@ -2,6 +2,7 @@ from django.conf import settings
 from django.contrib import messages
 from django.http import JsonResponse
 from django.shortcuts import render, redirect, reverse, get_object_or_404
+from django.views.decorators.csrf import csrf_exempt
 
 from app.forms import ContactMessageForm
 from app.models.contact import ContactMessage
@@ -53,3 +54,22 @@ def contact_message_check(request, pk):
     contact_message.is_checked = True
     contact_message.save()
     return redirect(reverse('app:contact_message_list'))
+
+
+@csrf_exempt
+def contact_message_send(request):
+    if request.method == 'POST':
+        message = ContactMessageForm(request.POST)
+        if message.is_valid():
+            message.save()
+        else:
+            print(message.errors)
+    return JsonResponse({
+        'sent': True
+    })
+
+def telegram_contact_messages(request, telegram_id):
+    messages = ContactMessage.objects.filter(telegram_id=telegram_id).order_by('-id')
+    return JsonResponse({
+        'messages': list(messages.values('name', 'subject', 'email', 'is_checked', 'message', 'created_at', 'is_checked')),
+    })

@@ -10,6 +10,7 @@ class ContactMessage(BaseModel):
     message = models.TextField("Хабарлама")
     file = models.FileField(upload_to="contact_message", null=True, blank=True)
     is_checked = models.BooleanField(default=False, null=True, blank=True)
+    telegram_id = models.CharField("Telegram ID", max_length=100, null=True, blank=True)
 
     class Meta:
         verbose_name = "Байланыс хаты"

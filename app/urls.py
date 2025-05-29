@@ -24,6 +24,8 @@ urlpatterns = [
     path('contact/messages', views.contact_message_list, name='contact_message_list'),
     path('contact/messages/<int:pk>/json', views.contact_message_json_detail, name='contact_message_json_detail'),
     path('contact/messages/<int:pk>/check', views.contact_message_check, name='contact_message_check'),
+    path('api/contact/messages/send', views.contact_message_send, name='contact_message_send'),
+    path('api/contact/messages/<str:telegram_id>', views.telegram_contact_messages, name='telegram_contact_messages'),
 
     # User views
     path('registration', views.registration, name='registration'),

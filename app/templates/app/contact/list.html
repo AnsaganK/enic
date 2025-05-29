@@ -78,8 +78,17 @@
                                 <i class="bi bi-question text-black-50"></i>
                             {% endif %}
                         </td>
-                        <td>{{ message.subject }}</td>
-                        <td>{{ message.created_at|date:'d-m-Y H:i' }}</td>
+                        <td>
+                            {{ message.subject }}
+                        </td>
+                        <td>
+                            {% if message.telegram_id %}
+                                <i class="bi bi-telegram text-info"></i>
+                            {% else %}
+                                <i class="bi bi-globe text-warning"></i>
+                            {% endif %}
+                            {{ message.created_at|date:'d-m-Y H:i' }}
+                        </td>
                         <td>
                             <a href="#" data-url="{% url 'app:contact_message_json_detail' message.pk %}"
                                data-check-url="{% url 'app:contact_message_check' message.pk %}"
