@@ -57,63 +57,65 @@
 
     <section class="section">
         <div class="container">
-            <table class="table table-bordered text-center">
-                <thead>
-                <tr>
-                    <th>#</th>
-                    <th>{% trans 'Оқылды' %}</th>
-                    <th>{% trans 'Тақырып' %}</th>
-                    <th>{% trans 'Жіберу уақыты' %}</th>
-                    <th></th>
-                </tr>
-                </thead>
-                <tbody>
-                {% for message in contact_messages %}
+            <div class="table-responsive">
+                <table class="table table-bordered text-center">
+                    <thead>
                     <tr>
-                        <td>{{ forloop.counter }}</td>
-                        <td>
-                            {% if message.is_checked %}
-                                <i class="bi bi-check-circle-fill text-success"></i>
-                            {% else %}
-                                <i class="bi bi-question text-black-50"></i>
-                            {% endif %}
-                        </td>
-                        <td>
-                            {{ message.subject }}
-                        </td>
-                        <td>
-                            {% if message.telegram_id %}
-                                <i class="bi bi-telegram text-info"></i>
-                            {% else %}
-                                <i class="bi bi-globe text-warning"></i>
-                            {% endif %}
-                            {{ message.created_at|date:'d-m-Y H:i' }}
-                        </td>
-                        <td>
-                            <a href="#" data-url="{% url 'app:contact_message_json_detail' message.pk %}"
-                               data-check-url="{% url 'app:contact_message_check' message.pk %}"
-                               class="btn btn-sm border pe-2 ps-2"
-                               style="border-color: var(--accent-color) !important;" onclick="showMessage(this)"
-                               data-bs-toggle="modal" data-bs-target="#messageDetailModal">
-                                <i class="bi bi-eye me-2"></i>
-                                {% trans 'Оқу' %}
-                            </a>
-                            {% if message.file %}
-                                <a href="{{ message.file.url }}" class="btn btn-success btn-sm" download>
-                                    <i class="bi bi-download ms-2 me-2"></i>
-                                    {% trans 'Жүктеу' %}
-                                </a>
-                            {% else %}
-                                <a href="#" class="btn btn-secondary btn-sm">
-                                    <i class="bi bi-download ms-2 me-2"></i>
-                                    {% trans 'Жүктеу' %}
-                                </a>
-                            {% endif %}
-                        </td>
+                        <th>#</th>
+                        <th>{% trans 'Оқылды' %}</th>
+                        <th>{% trans 'Тақырып' %}</th>
+                        <th>{% trans 'Жіберу уақыты' %}</th>
+                        <th></th>
                     </tr>
-                {% endfor %}
-                </tbody>
-            </table>
+                    </thead>
+                    <tbody>
+                    {% for message in contact_messages %}
+                        <tr>
+                            <td>{{ forloop.counter }}</td>
+                            <td>
+                                {% if message.is_checked %}
+                                    <i class="bi bi-check-circle-fill text-success"></i>
+                                {% else %}
+                                    <i class="bi bi-question text-black-50"></i>
+                                {% endif %}
+                            </td>
+                            <td>
+                                {{ message.subject }}
+                            </td>
+                            <td>
+                                {% if message.telegram_id %}
+                                    <i class="bi bi-telegram text-info"></i>
+                                {% else %}
+                                    <i class="bi bi-globe text-warning"></i>
+                                {% endif %}
+                                {{ message.created_at|date:'d-m-Y H:i' }}
+                            </td>
+                            <td>
+                                <a href="#" data-url="{% url 'app:contact_message_json_detail' message.pk %}"
+                                   data-check-url="{% url 'app:contact_message_check' message.pk %}"
+                                   class="btn btn-sm border pe-2 ps-2"
+                                   style="border-color: var(--accent-color) !important;" onclick="showMessage(this)"
+                                   data-bs-toggle="modal" data-bs-target="#messageDetailModal">
+                                    <i class="bi bi-eye me-2"></i>
+                                    {% trans 'Оқу' %}
+                                </a>
+                                {% if message.file %}
+                                    <a href="{{ message.file.url }}" class="btn btn-success btn-sm" download>
+                                        <i class="bi bi-download ms-2 me-2"></i>
+                                        {% trans 'Жүктеу' %}
+                                    </a>
+                                {% else %}
+                                    <a href="#" class="btn btn-secondary btn-sm">
+                                        <i class="bi bi-download ms-2 me-2"></i>
+                                        {% trans 'Жүктеу' %}
+                                    </a>
+                                {% endif %}
+                            </td>
+                        </tr>
+                    {% endfor %}
+                    </tbody>
+                </table>
+            </div>
         </div>
     </section>
 {% endblock %}
