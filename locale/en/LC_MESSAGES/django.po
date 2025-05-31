@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2025-05-31 15:54+0500\n"
+"POT-Creation-Date: 2025-05-31 19:13+0500\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -23,8 +23,8 @@ msgstr ""
 #: app/templates/app/about/memorandum.html:27
 #: app/templates/app/about/social_life.html:27
 #: app/templates/app/about/strategy.html:27
-#: app/templates/app/about/structure.html:27 app/templates/base.html:78
-#: app/templates/base.html:206
+#: app/templates/app/about/structure.html:27 app/templates/base.html:79
+#: app/templates/base.html:207
 msgid "Орталық туралы"
 msgstr "About the center"
 
@@ -33,13 +33,14 @@ msgstr "About the center"
 #: app/templates/app/about/social_life.html:17
 #: app/templates/app/about/strategy.html:17
 #: app/templates/app/about/structure.html:17
+#: app/templates/app/article/create.html:16
 #: app/templates/app/article/detail.html:17
 #: app/templates/app/article/list.html:17
 #: app/templates/app/contact/contact.html:17
 #: app/templates/app/contact/list.html:41 app/templates/app/page/FAQ.html:16
 #: app/templates/app/university/list.html:16
 #: app/templates/app/university/map.html:16
-#: app/templates/app/user/cabinet.html:16
+#: app/templates/app/user/cabinet.html:16 app/templates/app/user/list.html:16
 msgid "ЖОҒАРЫ БІЛІМ БЕРУДІ ДАМЫТУ ҰЛТТЫҚ ОРТАЛЫҒЫ"
 msgstr "NATIONAL CENTER FOR THE DEVELOPMENT OF HIGHER EDUCATION"
 
@@ -48,14 +49,15 @@ msgstr "NATIONAL CENTER FOR THE DEVELOPMENT OF HIGHER EDUCATION"
 #: app/templates/app/about/social_life.html:26
 #: app/templates/app/about/strategy.html:26
 #: app/templates/app/about/structure.html:26
+#: app/templates/app/article/create.html:25
 #: app/templates/app/article/detail.html:26
 #: app/templates/app/article/list.html:26
 #: app/templates/app/contact/contact.html:26
 #: app/templates/app/contact/list.html:50 app/templates/app/page/FAQ.html:25
 #: app/templates/app/university/list.html:25
 #: app/templates/app/university/map.html:25
-#: app/templates/app/user/cabinet.html:25 app/templates/base.html:74
-#: app/templates/registration/login.html:13
+#: app/templates/app/user/cabinet.html:25 app/templates/app/user/list.html:25
+#: app/templates/base.html:75 app/templates/registration/login.html:13
 #: app/templates/registration/registration.html:13
 msgid "Басты"
 msgstr "Home"
@@ -158,32 +160,32 @@ msgstr "Collegiality in management and decision-making"
 #: app/templates/app/about/strategy.html:6
 #: app/templates/app/about/strategy.html:15
 #: app/templates/app/about/strategy.html:28
-#: app/templates/app/about/strategy.html:37 app/templates/base.html:81
-#: app/templates/base.html:208
+#: app/templates/app/about/strategy.html:37 app/templates/base.html:82
+#: app/templates/base.html:209
 msgid "Стратегиясы және міндеті"
 msgstr "Strategy and mission"
 
 #: app/templates/app/about/about.html:105
 #: app/templates/app/about/structure.html:6
 #: app/templates/app/about/structure.html:15
-#: app/templates/app/about/structure.html:28 app/templates/base.html:82
-#: app/templates/base.html:209
+#: app/templates/app/about/structure.html:28 app/templates/base.html:83
+#: app/templates/base.html:210
 msgid "Құрылымы"
 msgstr "Structure"
 
 #: app/templates/app/about/about.html:112
 #: app/templates/app/about/memorandum.html:6
 #: app/templates/app/about/memorandum.html:15
-#: app/templates/app/about/memorandum.html:28 app/templates/base.html:83
-#: app/templates/base.html:210
+#: app/templates/app/about/memorandum.html:28 app/templates/base.html:84
+#: app/templates/base.html:211
 msgid "Орталықтың Меморандумдары"
 msgstr "Memoranda of the Center"
 
 #: app/templates/app/about/about.html:119
 #: app/templates/app/about/social_life.html:6
 #: app/templates/app/about/social_life.html:15
-#: app/templates/app/about/social_life.html:28 app/templates/base.html:84
-#: app/templates/base.html:211
+#: app/templates/app/about/social_life.html:28 app/templates/base.html:85
+#: app/templates/base.html:212
 msgid "Қоғамдық өмір"
 msgstr "Public life"
 
@@ -296,21 +298,36 @@ msgstr ""
 msgid "Этот браузер не поддерживает PDF просмотр."
 msgstr ""
 
+#: app/templates/app/article/create.html:5
+#: app/templates/app/article/create.html:27
+msgid "Жаңалық қосу"
+msgstr "Add news"
+
+#: app/templates/app/article/create.html:14
+#: app/templates/app/article/create.html:26
 #: app/templates/app/article/detail.html:27
 #: app/templates/app/article/list.html:6 app/templates/app/article/list.html:15
-#: app/templates/app/article/list.html:27 app/templates/base.html:88
+#: app/templates/app/article/list.html:27 app/templates/base.html:89
 msgid "Жаңалыктар"
 msgstr "News"
+
+#: app/templates/app/article/create.html:75
+msgid "Сақтау"
+msgstr "save"
 
 #: app/templates/app/article/detail.html:35
 msgid "Күні"
 msgstr "Date"
 
+#: app/templates/app/article/list.html:40
+msgid "Қосу"
+msgstr "add"
+
 #: app/templates/app/contact/contact.html:6
 #: app/templates/app/contact/contact.html:15
 #: app/templates/app/contact/contact.html:27
 #: app/templates/app/contact/list.html:51 app/templates/app/page/home.html:170
-#: app/templates/base.html:91
+#: app/templates/base.html:92
 msgid "Байланыс"
 msgstr "Contact"
 
@@ -332,7 +349,7 @@ msgstr "Telephone"
 
 #: app/templates/app/contact/contact.html:89
 #: app/templates/app/contact/list.html:144
-#: app/templates/app/user/cabinet.html:43
+#: app/templates/app/user/cabinet.html:51
 msgid "Аты"
 msgstr "Name"
 
@@ -394,7 +411,7 @@ msgstr "Subject"
 
 #: app/templates/app/page/FAQ.html:5 app/templates/app/page/FAQ.html:14
 #: app/templates/app/page/FAQ.html:26 app/templates/app/page/home.html:156
-#: app/templates/base.html:94
+#: app/templates/base.html:95
 msgid "Сұрақ-жауап"
 msgstr "FAQ"
 
@@ -506,7 +523,7 @@ msgid "Тағы"
 msgstr "More"
 
 #: app/templates/app/page/home.html:78 app/templates/app/university/list.html:5
-#: app/templates/base.html:99
+#: app/templates/base.html:100
 msgid "ЖОО"
 msgstr "University"
 
@@ -599,7 +616,7 @@ msgstr "Search"
 
 #: app/templates/app/university/map.html:5
 #: app/templates/app/university/map.html:14
-#: app/templates/app/university/map.html:26 app/templates/base.html:103
+#: app/templates/app/university/map.html:26 app/templates/base.html:104
 msgid "Карта"
 msgstr "Map"
 
@@ -612,39 +629,64 @@ msgstr "Click on a region or city on the map to see a list of universities."
 msgid "Жеке кабинет"
 msgstr "Personal account"
 
-#: app/templates/app/user/cabinet.html:47
+#: app/templates/app/user/cabinet.html:32
+msgid "Қолданушылар"
+msgstr "Users"
+
+#: app/templates/app/user/cabinet.html:56
 msgid "Жөні"
 msgstr "Last name"
 
-#: app/templates/app/user/cabinet.html:53
+#: app/templates/app/user/cabinet.html:63
 msgid "Өзгерту"
 msgstr "Change"
 
-#: app/templates/app/user/cabinet.html:63
+#: app/templates/app/user/cabinet.html:73
 msgid "Шығу"
 msgstr "Logout"
 
-#: app/templates/base.html:102
+#: app/templates/app/user/list.html:5 app/templates/app/user/list.html:14
+#: app/templates/app/user/list.html:26
+msgid "Қолданушылар тізімі"
+msgstr "User list"
+
+#: app/templates/app/user/list.html:38
+msgid "Логин"
+msgstr "login"
+
+#: app/templates/app/user/list.html:39
+msgid "Т.А.Ә"
+msgstr "Full name"
+
+#: app/templates/app/user/list.html:40
+msgid "Қосылу уақыты"
+msgstr "Date joined"
+
+#: app/templates/app/user/list.html:41
+msgid "Авторизация уақыты"
+msgstr "Authorization time"
+
+#: app/templates/base.html:103
 msgid "Тізім"
 msgstr "List"
 
-#: app/templates/base.html:139
+#: app/templates/base.html:140
 msgid "Кабинет"
 msgstr "Cabinet"
 
-#: app/templates/base.html:197
+#: app/templates/base.html:198
 msgid "Пайдалы сілтемелер"
 msgstr "Useful links"
 
-#: app/templates/base.html:199
+#: app/templates/base.html:200
 msgid "Сатып алулар"
 msgstr "Procurement"
 
-#: app/templates/base.html:200
+#: app/templates/base.html:201
 msgid "Жұмыс орындары"
 msgstr "Vacancies"
 
-#: app/templates/base.html:201
+#: app/templates/base.html:202
 msgid "Құпиялылық саясаты"
 msgstr "Privacy Policy"
 
@@ -684,10 +726,10 @@ msgstr "Registration"
 msgid "Тіркелгенсіз бе"
 msgstr "Are you registered?"
 
-#: app/views/user.py:15
+#: app/views/user.py:17
 msgid "Бұл логинмен қолданушы бар. Басқасын таңданыз"
 msgstr "There is already a user with this username. Please choose another one."
 
-#: app/views/user.py:17
+#: app/views/user.py:19
 msgid "Профиль өзгертілді"
 msgstr "Profile changed"
