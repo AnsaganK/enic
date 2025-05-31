@@ -228,7 +228,7 @@
                         <div class="col-lg-4 col-md-6 d-flex align-items-stretch" data-aos="zoom-in"
                              data-aos-delay="100">
                             <div class="course-item">
-                                <img src="{% if article.img %}{{ article.img.url }}{% else %}{% static 'app/img/enic.png' %}{% endif %}" class="img-fluid" alt="{{ article.title }}" style="height: 250px">
+                                <img src="{% if article.img %}{{ article.img.url }}{% else %}{% static 'app/img/enic.png' %}{% endif %}" class="img-fluid" alt="{{ article.title }}" style="height: 250px; width: 100%">
                                 <div class="course-content">
                                     <h3><a href="{{ article.get_absolute_url }}">{{ article.title|default:'' }}</a></h3>
                                     <p class="description">{{ article.content|safe|truncatewords_html:10 }}</p>
