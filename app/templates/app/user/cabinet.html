@@ -20,11 +20,18 @@
             </div>
         </div>
         <nav class="breadcrumbs">
-            <div class="container">
-                <ol>
-                    <li><a href="{% url 'app:home' %}">{% trans 'Басты' %}</a></li>
-                    <li class="current">{% trans 'Жеке кабинет' %}<br></li>
-                </ol>
+            <div class="container d-flex justify-content-between align-items-center">
+                    <ol>
+                        <li><a href="{% url 'app:home' %}">{% trans 'Басты' %}</a></li>
+                        <li class="current">{% trans 'Жеке кабинет' %}<br></li>
+                    </ol>
+
+                    {% if user.is_superuser %}
+                        <a href="{% url 'app:user_list' %}" class="btn btn-sm text-black d-flex align-items-center btn-light bg-white">
+                            <i class="bi bi-person-circle me-2"></i>
+                            {% trans 'Қолданушылар' %}
+                        </a>
+                    {% endif %}
             </div>
         </nav>
     </div>
@@ -35,17 +42,19 @@
                   data-aos="fade-up" data-aos-delay="200">
                 {% csrf_token %}
                 <div class="row gy-4">
-
                     <div class="col-md-12">
-                        <input type="email" name="name" class="form-control" placeholder="Email" required="" value="{{ user.username }}">
+                        <input type="{% if request.user.is_superuser %}text{% else %}email{% endif %}" name="username"
+                               class="form-control" placeholder="Email" required="" value="{{ user.username }}">
                     </div>
 
                     <div class="col-md-6">
-                        <input type="text" name="name" class="form-control" placeholder="{% trans 'Аты' %}" required="" value="{{ user.first_name }}">
+                        <input type="text" name="first_name" class="form-control" placeholder="{% trans 'Аты' %}"
+                               required="" value="{{ user.first_name }}">
                     </div>
 
                     <div class="col-md-6 ">
-                        <input type="email" class="form-control" name="email" placeholder="{% trans 'Жөні' %}" required="" value="{{ user.last_name }}">
+                        <input type="text" class="form-control" name="last_name" placeholder="{% trans 'Жөні' %}"
+                               required="" value="{{ user.last_name }}">
                     </div>
 
                     <div class="col-md-12 text-center">

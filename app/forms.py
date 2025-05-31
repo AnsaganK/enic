@@ -23,4 +23,14 @@ class ContactMessageForm(forms.ModelForm):
 class ArticleForm(forms.ModelForm):
     class Meta:
         model = Article
-        fields = ['title', 'img', 'content']
+        fields = [
+            'title_kk', 'title_ru', 'title_en',
+            'content_kk', 'content_ru', 'content_en',
+            'img'
+        ]
+
+
+class UserEditForm(forms.ModelForm):
+    class Meta:
+        model = User
+        fields = ['username', 'first_name', 'last_name']

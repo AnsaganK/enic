@@ -30,6 +30,7 @@ urlpatterns = [
     # User views
     path('registration', views.registration, name='registration'),
     path('cabinet', views.cabinet, name='cabinet'),
+    path('user/list', views.user_list, name='user_list'),
 
     # University views
     path('university', views.university_list, name='university_list'),

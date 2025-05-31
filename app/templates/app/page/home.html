@@ -231,7 +231,7 @@
                                 <img src="{% if article.img %}{{ article.img.url }}{% else %}{% static 'app/img/enic.png' %}{% endif %}" class="img-fluid" alt="{{ article.title }}" style="height: 250px">
                                 <div class="course-content">
                                     <h3><a href="{{ article.get_absolute_url }}">{{ article.title|default:'' }}</a></h3>
-                                    <p class="description">{{ article.content|truncatewords_html:10 }}</p>
+                                    <p class="description">{{ article.content|safe|truncatewords_html:10 }}</p>
                                 </div>
                             </div>
                         </div> <!-- End Course Item-->

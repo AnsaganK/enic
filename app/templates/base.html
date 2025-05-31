@@ -54,6 +54,7 @@
             }
         }
     </style>
+
 </head>
 
 <body class="index-page">
@@ -121,9 +122,9 @@
                     <form action="{% url 'set_language' %}" method="post">
                         {% csrf_token %}
                         <select name="language" class="form-control form-select" onchange="this.form.submit()">
-                            <option value="kk" {% if LANGUAGE_CODE == "kk" %}selected{% endif %}>Қазақша</option>
-                            <option value="ru" {% if LANGUAGE_CODE == "ru" %}selected{% endif %}>Русский</option>
-                            <option value="en" {% if LANGUAGE_CODE == "en" %}selected{% endif %}>English</option>
+                            <option value="kk" {% if LANGUAGE_CODE == "kk" %}selected{% endif %}>🇰🇿 Қазақша</option>
+                            <option value="ru" {% if LANGUAGE_CODE == "ru" %}selected{% endif %}>🇷🇺 Русский</option>
+                            <option value="en" {% if LANGUAGE_CODE == "en" %}selected{% endif %}>🇬🇧 English</option>
                         </select>
                     </form>
                 </li>

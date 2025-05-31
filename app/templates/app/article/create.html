@@ -1,0 +1,110 @@
+{% extends 'base.html' %}
+{% load i18n %}
+
+{% block title %}
+    {% trans 'Жаңалық қосу' %}
+{% endblock %}
+
+{% block content %}
+    <div class="page-title aos-init aos-animate" data-aos="fade">
+        <div class="heading">
+            <div class="container">
+                <div class="row d-flex justify-content-center text-center">
+                    <div class="col-lg-8">
+                        <h1>{% trans 'Жаңалыктар' %}<br></h1>
+                        <p class="mb-0">
+                            {% trans 'ЖОҒАРЫ БІЛІМ БЕРУДІ ДАМЫТУ ҰЛТТЫҚ ОРТАЛЫҒЫ' %}
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <nav class="breadcrumbs">
+            <div class="container">
+                <ol>
+                    <li><a href="{% url 'app:home' %}">{% trans 'Басты' %}</a></li>
+                    <li><a href="{% url 'app:article_list' %}">{% trans 'Жаңалыктар' %}</a></li>
+                    <li class="current">{% trans 'Жаңалық қосу' %}<br></li>
+                </ol>
+            </div>
+        </nav>
+    </div>
+    <section class="section">
+        <div class="container">
+            <form method="post" enctype="multipart/form-data">
+                {% csrf_token %}
+                <h3 class="text-center">Кескін / Изображение / Image</h3>
+                <div class="mb-3">
+                    <input type="file"
+                           class="form-control"
+                           name="img"
+                           id="img"
+                           accept="image/*"
+                           onchange="validateImage(this)">
+                </div>
+                <h3 class="text-center">Атауы / Название / Title</h3>
+                <div class="mb-3">
+                    <label for="title_kk">Қазақша</label>
+                    <input type="text" class="form-control" name="title_kk" id="title_kk" required>
+                </div>
+                <div class="mb-3">
+                    <label for="title_ru">На русском</label>
+                    <input type="text" class="form-control" name="title_ru" id="title_ru" required>
+                </div>
+                <div class="mb-3">
+                    <label for="title_en">In English</label>
+                    <input type="text" class="form-control" name="title_en" id="title_en" required>
+                </div>
+                <h3 class="text-center">Мазмұны / Содержание / Content</h3>
+                <div class="mb-3">
+                    <label for="content_kk">Қазақша</label>
+                    <textarea name="content_kk" id="content_kk" rows="10"></textarea>
+                </div>
+
+                <div class="mb-3">
+                    <label for="content_ru">Русский</label>
+                    <textarea name="content_ru" id="content_ru" rows="10"></textarea>
+                </div>
+
+                <div class="mb-3">
+                    <label for="content_en">English</label>
+                    <textarea name="content_en" id="content_en" rows="10"></textarea>
+                </div>
+
+                <button type="submit" class="btn btn-primary m-auto d-block"
+                        style="background-color: var(--accent-color); border-color: var(--accent-color)">{% trans 'Сақтау' %}</button>
+            </form>
+        </div>
+    </section>
+{% endblock %}
+
+{% block script %}
+    <script src="https://cdn.ckeditor.com/4.22.0/standard/ckeditor.js"></script>
+
+    <script>
+        CKEDITOR.replace('content_kk');
+        CKEDITOR.replace('content_ru');
+        CKEDITOR.replace('content_en');
+    </script>
+    <script>
+        function validateImage(input) {
+            const file = input.files[0];
+            const maxSizeMB = 5;  // максимум 5 МБ
+
+            if (file) {
+                if (!file.type.startsWith('image/')) {
+                    alert("Тек сурет жүктеуге болады! / Только изображения разрешены!");
+                    input.value = "";
+                    return;
+                }
+
+                const sizeMB = file.size / (1024 * 1024);  // байты → мегабайты
+                if (sizeMB > maxSizeMB) {
+                    alert("Сурет көлемі 5 МБ-тан аспауы керек! / Размер изображения не должен превышать 5 МБ!");
+                    input.value = "";
+                    return;
+                }
+            }
+        }
+    </script>
+{% endblock %}

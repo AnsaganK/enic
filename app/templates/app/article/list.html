@@ -32,22 +32,34 @@
     <section id="courses" class="courses section">
 
         <div class="container">
-
+            {% if user.is_superuser %}
+                <div class="d-flex justify-content-end">
+                    <a href="{% url 'app:article_create' %}"
+                       class="btn text-white" style="background-color: var(--accent-color)">
+                        <i class="bi bi-plus-circle me-2"></i>
+                        {% trans 'Қосу' %}
+                    </a>
+                </div>
+                <hr>
+            {% endif %}
             <div class="row">
                 {% for article in articles %}
-                    <div class="col-lg-4 col-md-6 d-flex align-items-stretch aos-init aos-animate" data-aos="zoom-in"
+                    <div class="col-lg-4 col-md-6 d-flex mb-3 align-items-stretch aos-init aos-animate"
+                         data-aos="zoom-in"
                          data-aos-delay="100">
-                        <div class="course-item">
-                            <img src="{% if article.img %}{{ article.img.url }}{% else %}{% static 'app/img/enic.png' %}{% endif %}" class="img-fluid" alt="{{ article.title }}" style="height: 250px">
+                        <div class="course-item w-100">
+                            <img src="{% if article.img %}{{ article.img.url }}
+{% else %}{% static 'app/img/enic.png' %}{% endif %}"
+                                 class="img-fluid" alt="{{ article.title }}" style="height: 250px;width: 100%">
                             <div class="course-content">
                                 <h3><a href="{{ article.get_absolute_url }}">{{ article.title|default:'' }}</a></h3>
-                                <p class="description">{{ article.content|truncatewords:10 }}</p>
+                                <p class="description">{{ article.content|default:''|safe|truncatewords:10 }}</p>
                             </div>
                         </div>
                     </div> <!-- End Course Item-->
                 {% endfor %}
             </div>
-
+            {% include 'include/page/pagination.html' with page=articles %}
         </div>
 
     </section>

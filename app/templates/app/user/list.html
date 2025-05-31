@@ -1,0 +1,59 @@
+{% extends 'base.html' %}
+{% load i18n %}
+
+{% block title %}
+    {% trans 'Қолданушылар тізімі' %}
+{% endblock %}
+
+{% block content %}
+    <div class="page-title aos-init aos-animate" data-aos="fade">
+        <div class="heading">
+            <div class="container">
+                <div class="row d-flex justify-content-center text-center">
+                    <div class="col-lg-8">
+                        <h1>{% trans 'Қолданушылар тізімі' %}<br></h1>
+                        <p class="mb-0">
+                            {% trans 'ЖОҒАРЫ БІЛІМ БЕРУДІ ДАМЫТУ ҰЛТТЫҚ ОРТАЛЫҒЫ' %}
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <nav class="breadcrumbs">
+            <div class="container">
+                <ol>
+                    <li><a href="{% url 'app:home' %}">{% trans 'Басты' %}</a></li>
+                    <li class="current">{% trans 'Қолданушылар тізімі' %}<br></li>
+                </ol>
+            </div>
+        </nav>
+    </div>
+    <section class="section">
+        <div class="container">
+            <div class="table-responsive">
+                <table class="table table-hover">
+                    <thead>
+                    <tr>
+                        <th>#</th>
+                        <th>{% trans 'Логин' %}</th>
+                        <th>{% trans 'Т.А.Ә' %}</th>
+                        <th>{% trans 'Қосылу уақыты' %}</th>
+                        <th>{% trans 'Авторизация уақыты' %}</th>
+                    </tr>
+                    </thead>
+                    <tbody>
+                    {% for user in users %}
+                        <tr>
+                            <td>{{ forloop.counter }}</td>
+                            <td>{{ user.username }}</td>
+                            <td>{{ user.get_full_name }}</td>
+                            <td>{{ user.date_joined|date:'d-m-Y H:i' }}</td>
+                            <td>{{ user.last_login|date:'d-m-Y H:i' }}</td>
+                        </tr>
+                    {% endfor %}
+                    </tbody>
+                </table>
+            </div>
+        </div>
+    </section>
+{% endblock %}

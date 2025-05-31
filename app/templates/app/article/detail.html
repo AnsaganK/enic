@@ -37,7 +37,7 @@
             <h4 class="text-center">
                 {{ article.title }}
             </h4>
-            {{ article.content }}
+            {{ article.content|safe }}
         </div>
     </section>
 {% endblock %}

@@ -6,7 +6,7 @@ from app.models.base import BaseModel
 
 
 class Article(BaseModel):
-    title = models.CharField(max_length=255)
+    title = models.CharField(max_length=255, null=True, blank=True)
     img = models.ImageField(upload_to='article_imgs', null=True, blank=True)
     slug = models.SlugField(max_length=255, null=True, blank=True, unique=True)
     content = models.TextField(null=True, blank=True)
